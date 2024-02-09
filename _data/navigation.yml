@@ -1,0 +1,15 @@
+# main links
+main:
+  - title: Über Uns
+    url: /about/
+  - title: Konzerte
+    url: /plakarte/
+  - title: Chronik
+    url: /chronik/
+  - title: Forderung
+    url: /forderung/
+  - title: Mitspielen
+    url: /
+
+
+
