@@ -22,26 +22,7 @@ sidebar:
 
 Fühlen Sie sich wohl auf unseren Internetseiten. Natürlich freuen wir uns auch über Ihren Besuch bei unseren Konzerten, die traditionell mindestens zwei Mal im Jahr in den schönsten Konzertsälen Wiens stattfinden.
 
-_________
 
-<div class="images-container">
-  <figure class="third">
-    <img src="/assets/images/M.J.B).HR-05657.JPG" alt="Image 1 description">
-  </figure>
-  <figure class="third">
-    <img src="/assets/images/M.J.B).HR-05657.JPG" alt="Image 2 description">
-  </figure>
-</div>
-
-<style>
-  .images-container {
-    display: flex;
-  }
-  .images-container figure {
-    margin: 0 10px; /* Adjust spacing as needed */
-  }
-</style>
-_________
 
 <br />
  
