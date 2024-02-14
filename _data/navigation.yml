@@ -6,10 +6,10 @@ main:
     url: /plakarte/
   - title: Chronik
     url: /chronik/
-  - title: Forderung
+  - title: Förderung
     url: /forderung/
   - title: Mitspielen
-    url: /
+    url: /mitspielen/
 
 
 

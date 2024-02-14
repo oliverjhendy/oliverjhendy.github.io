@@ -6,10 +6,9 @@ permalink: /about/
 header:
   image: /assets/images/waph_bw_1.jpeg
 
-classes: wide
 
 sidebar:
-    - image: /assets/images/waph-logo-tall.png
+    - image: /assets/images/waph-logo.png
     - text: "**Wiener Akademische Philharmonie**<br />
 Daniela Ungar, Obfrau<br />
 Brigitte Brandner, Stellvertretende Obfrau<br />

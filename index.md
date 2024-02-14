@@ -1,11 +1,20 @@
 ---
-layout: splash
+layout: single
 header:
   image: /assets/images/M.J.B).HR-05657-3.png
 classes: wide
 url: "/"
 
 
+sidebar:
+    - image: assets/images/plakarte/231124_Beethoven9.jpg
+    - text: "**Nächstes Konzert:**<br />
+**Wiener Konzerthaus**<br />
+24 November 2023<br />
+**Beethoven**<br /> 
+  Symphony No. 9<br />
+**Schönberg**<br />
+  Friede auf Erden<br />"
 
 
 ---
@@ -13,6 +22,29 @@ url: "/"
 
 Fühlen Sie sich wohl auf unseren Internetseiten. Natürlich freuen wir uns auch über Ihren Besuch bei unseren Konzerten, die traditionell mindestens zwei Mal im Jahr in den schönsten Konzertsälen Wiens stattfinden.
 
+_________
+
+<div class="images-container">
+  <figure class="third">
+    <img src="/assets/images/M.J.B).HR-05657.JPG" alt="Image 1 description">
+  </figure>
+  <figure class="third">
+    <img src="/assets/images/M.J.B).HR-05657.JPG" alt="Image 2 description">
+  </figure>
+</div>
+
+<style>
+  .images-container {
+    display: flex;
+  }
+  .images-container figure {
+    margin: 0 10px; /* Adjust spacing as needed */
+  }
+</style>
+_________
+
+<br />
+ 
 Die **Wiener Akademische Philharmonie** wurde im Jahr 1988 gegründet. Ursprünglich als Studentenorchester gegründet wirkt die Wiener Akademische Philharmonie heute als semiprofessionelles Orchester im In- und Ausland und musiziert mit zahlreichen namhaften Solisten und unter herausragenden jungen, wie auch renommierten Dirigenten.
 
 Neben der regelmäßigen Orchesterarbeit mit zumindest zwei Konzerten pro Jahr in den großen Sälen Wiens gehören Opernproduktionen und Auslandstourneen zum fixen Bestandteil der Projekte des Orchesters. Darunter befindet sich die erste Einladung eines westlichen Orchesters nach Lemberg (Ukraine) im Rahmen des Festivals Virtuosi 1991. Weitere Reisen führten das Orchester nach Deutschland, Italien, Spanien, Griechenland, Polen, Tschechien und nach China mit umjubelten Konzerten unter anderem in Shanghai und Peking.
