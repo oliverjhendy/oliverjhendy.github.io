@@ -11,6 +11,7 @@ header:
 ---
 
 
-**Do you want to play with us?**
+**Mitspielen**
 
-We are always looking for new players to join our orchestra. If you are interested in playing with us, please send an email to **join@waph.at**, along with your name, instrument, and estimated level of experience. 
+Wir freuen uns über jeden, der sich interessiert, bei uns mitzuspielen.
+Dafür sendet bitte einen kurzen musikal.Lebenslauf und ein Video an Dani mit einem schnellen und einem elegischen Stück an ungar@waph.at

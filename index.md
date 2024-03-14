@@ -1,33 +1,37 @@
 ---
-layout: single
+layout: splash
 header:
-  image: /assets/images/M.J.B).HR-05657-3.png
+  #image: /assets/images/stage3_long.jpeg
 classes: wide
 url: "/"
 
 
-sidebar:
-    - image: assets/images/plakarte/231124_Beethoven9.jpg
-    - text: "**Nächstes Konzert:**<br />
-**Wiener Konzerthaus**<br />
-24 November 2023<br />
-**Beethoven**<br /> 
-  Symphony No. 9<br />
-**Schönberg**<br />
-  Friede auf Erden<br />"
-
 
 ---
-# Herzlich willkommen, wir sind WAPh 
+<pre><span style=" font-family: 'RobotoSlab-Standard'; font-size: 2em; font-weight:Bold">Herzlich Willkommen!</span></pre>
+<pre><span style=" font-family: 'RobotoSlab'; font-size: 1.5em; font-weight:Bold">Bitte besuchen Sie unser nächstes Konzert am 16. Juni:
+<style>
+  pre {
+    white-space: pre-wrap; 
+  }
+  </style>
+</span></pre>
 
-Fühlen Sie sich wohl auf unseren Internetseiten. Natürlich freuen wir uns auch über Ihren Besuch bei unseren Konzerten, die traditionell mindestens zwei Mal im Jahr in den schönsten Konzertsälen Wiens stattfinden.
+<div style="text-align: center;">
+  <a href="https://example.com" target="_blank">
+    <img src="assets/images/plakarte/224207-Rach.png" alt="Alt text for broken image link" style="max-width: 400px; display: block; margin: 0 auto;">
+  </a>
+  <div style="max-width: 400px; margin: 0 auto;">
+    <br>
+      <pre><span style=" font-family: 'RobotoSlab'; font-size: 1em; font-weight:Bold">Herzlich Willkommen! 
+      </span></pre>
+    
+  </div>
+</div>
 
 
-
-<br />
- 
-Die **Wiener Akademische Philharmonie** wurde im Jahr 1988 gegründet. Ursprünglich als Studentenorchester gegründet wirkt die Wiener Akademische Philharmonie heute als semiprofessionelles Orchester im In- und Ausland und musiziert mit zahlreichen namhaften Solisten und unter herausragenden jungen, wie auch renommierten Dirigenten.
-
-Neben der regelmäßigen Orchesterarbeit mit zumindest zwei Konzerten pro Jahr in den großen Sälen Wiens gehören Opernproduktionen und Auslandstourneen zum fixen Bestandteil der Projekte des Orchesters. Darunter befindet sich die erste Einladung eines westlichen Orchesters nach Lemberg (Ukraine) im Rahmen des Festivals Virtuosi 1991. Weitere Reisen führten das Orchester nach Deutschland, Italien, Spanien, Griechenland, Polen, Tschechien und nach China mit umjubelten Konzerten unter anderem in Shanghai und Peking.
-
-Viele der ehemaligen Mitglieder sind inzwischen bei den großen österreichischen Orchestern engagiert. Aber auch Musikstudenten aus aller Welt finden gerne zu dieser freiwilligen Form des gemeinsamen Musizierens in hoher Qualität und auf großen Bühnen.
+<div style="text-align: center;">
+  <a href="https://example.com" target="_blank">
+    <img src="assets/images/stage3_long.jpeg" alt="Alt text for broken image link" style="max-width: 100%; display: block; margin: 0 auto;">
+  </a>
+</div>

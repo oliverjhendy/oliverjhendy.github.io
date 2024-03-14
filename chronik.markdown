@@ -1,6 +1,8 @@
 ---
 layout: single
 title:  
+header:
+  image: /assets/images/stage3_wide_chronik.png
 date:   2023-11-20 06:48:27 +0100
 categories: jekyll update
 permalink: "/chronik/"
@@ -9,71 +11,86 @@ permalink: "/chronik/"
 # Chronik 
 
 ### **24.11.2023**
-**Konzert für Frieden**
-*Schönberg / Beethoven*
-ProCoro Wien / Krsteska / Kuryatnikova / Pollak / Aigner / Juraszek
+**Konzert für Frieden** <br/>
+*Schönberg / Beethoven* <br/>
+ProCoro Wien<br/>
+Krsteska / Kuryatnikova / Pollak / Aigner<br/>
+Michal Juraszek - Dirigent <br/>
+<br/>
 
 
+---
+### **08.06.2023**
+*Strauss / Weber / Bruckner* <br/>
+Franz-Joseph Labmayr - Klarinette<br/>
+Jon Svinghammer - Dirigent<br/>
+
+---
+### **20.11.2022**
+
+*Verdi Requiem* <br/>
+<br/>
+ProChoro Wien<br/>
+Michal Juraszek - Dirigent<br/>
 
 ---
 
 ## 22.06.2021
-**Juni 2021**
 
-*Lutosławski / Tschaikowski / Mozart*
-Lee / Juraszek
+*Lutosławski / Tschaikowski / Mozart*<br/>
+Lee / Juraszek<br/>
 
 
 
 ---
 
 ## 13.12.2019
-**Dezember 2019**
-*Puccini / Strauss / Brahms*
-Calvo
+
+*Puccini / Strauss / Brahms*<br/>
+Calvo<br/>
 
 
 
 ---
 
 ## 12.07.2019
-**Preisträgerkonzert**
+**Preisträgerkonzert**<br/>
 
 
 
 ---
 
 ## 05.05.2019
-**Frühjahrs-Konzert**
-*Sibelius / Mendelssohn-Bartholdy / Aghakhani / Beethoven*
-Aghakhani / Kropfitsch
+**Frühjahrs-Konzert**<br/>
+*Sibelius / Mendelssohn-Bartholdy / Aghakhani / Beethoven*<br/>
+Aghakhani / Kropfitsch<br/>
 
 
 
 ---
 
 ## 25.11.2018
-**30 Jahre WAPh / Jubiläumskonzert**
-*Köhring / Rachmaninoff / Berlioz*
-Praxmarer / Sepashvili
+**30 Jahre WAPh / Jubiläumskonzert**<br/>
+*Köhring / Rachmaninoff / Berlioz*<br/>
+Praxmarer / Sepashvili<br/>
 
 
 
 ---
 
 ## 21.06.2018
-**Benefizkonzert des Malteserordens**
-*Korngold / Bernstein / Lauridsen / Whitacre / Gershwin*
-Konzertchor Wien / Horak / Huemer / Hosp / Praxmarer / Schwarz, Salzbrunn
+**Benefizkonzert des Malteserordens**<br/>
+*Korngold / Bernstein / Lauridsen / Whitacre / Gershwin*<br/>
+Konzertchor Wien / Horak / Huemer / Hosp / Praxmarer / Schwarz, Salzbrunn<br/>
 
 
 
 ---
 
 ## 27.11.2017
-**movendo (2. Konzert)**
-*Tschaikowski / Rota / Schumann*
-Sadikovic / Lenaerts
+**movendo (2. Konzert)**<br/>
+*Tschaikowski / Rota / Schumann*<br/>
+Sadikovic / Lenaerts<br/>
 
 
 

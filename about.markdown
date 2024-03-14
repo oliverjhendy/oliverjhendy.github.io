@@ -4,7 +4,7 @@ title:
 excerpt: "."
 permalink: /about/
 header:
-  image: /assets/images/waph_bw_1.jpeg
+  image: /assets/images/conductor2_wide_uberuns.png
 
 
 sidebar:
@@ -22,8 +22,10 @@ A 1080 Wien<br />
 <br />
 <br />
 **Email**<br />
-impressum@waph.at"
-
+impressum@waph.at<br/>
+<br/>
+**Instagram:**<br/>
+[@w.aph](https://www.instagram.com/p/Cac3btps-yE/?hl=en)"
 ---
 ## die Wiener Akademische Philharmonie
 

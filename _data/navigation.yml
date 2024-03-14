@@ -4,8 +4,6 @@ main:
     url: /about/
   - title: Konzerte
     url: /plakarte/
-  - title: Chronik
-    url: /chronik/
   - title: Förderung
     url: /forderung/
   - title: Mitspielen
