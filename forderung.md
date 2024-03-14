@@ -2,7 +2,7 @@
 layout: single
 title:
 excerpt: "."
-permalink: /Forderung/
+permalink: /forderung/
 header:
   image: /assets/images/IMG_1148.jpeg
 
