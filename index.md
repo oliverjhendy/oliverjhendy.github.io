@@ -1,7 +1,7 @@
 ---
 layout: splash
 header:
-  #image: /assets/images/stage3_long.jpeg
+  image: /assets/images/stage3_long.jpeg
 classes: wide
 url: "/"
 
@@ -23,15 +23,10 @@ url: "/"
   </a>
   <div style="max-width: 400px; margin: 0 auto;">
     <br>
-      <pre><span style=" font-family: 'RobotoSlab'; font-size: 1em; font-weight:Bold">Herzlich Willkommen! 
+      <pre><span style=" font-family: 'RobotoSlab'; font-size: 1em; font-weight:Bold">Mehr text hier
       </span></pre>
     
   </div>
 </div>
 
 
-<div style="text-align: center;">
-  <a href="https://example.com" target="_blank">
-    <img src="assets/images/stage3_long.jpeg" alt="Alt text for broken image link" style="max-width: 100%; display: block; margin: 0 auto;">
-  </a>
-</div>
