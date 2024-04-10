@@ -11,6 +11,11 @@ permalink: "/probenplan/"
 # Konzert: 16.6 19:30 Musikverein Goldener Saal
 ## Probenplan Sommer 2024 
 
+**Yamaha Hall**: Schleiergasse 20, 1100
+**IMP**: Campus Vienna Biocenter 1, 1030
+
+
+
 **Montag 19.2.19:30** <br>
 Notenausgabe Cafe Stein 
 

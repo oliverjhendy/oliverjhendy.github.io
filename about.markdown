@@ -8,8 +8,9 @@ header:
 
 
 sidebar:
-    - image: /assets/images/waph-logo.png
-    - text: "**Wiener Akademische Philharmonie**<br />
+    - text: "<br />
+    <br />
+    **Wiener Akademische Philharmonie**<br />
 Daniela Ungar, Obfrau<br />
 Brigitte Brandner, Stellvertretende Obfrau<br />
 Nils Kirchhoff, Kassier<br />
