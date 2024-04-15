@@ -19,7 +19,7 @@ url: "/"
 
 <div style="text-align: center;">
   <a href="https://www.musikverein.at/konzert/?id=00056a9d" target="_blank">
-    <img src="assets/images/plakarte/224207-Rach.png" alt="Alt text for broken image link" style="max-width: 400px; display: block; margin: 0 auto;">
+    <img src="assets/images/plakarte/240616-Rach.png" alt="Alt text for broken image link" style="max-width: 400px; display: block; margin: 0 auto;">
   </a>
   <div style="max-width: 400px; margin: 0 auto;">
     <br>
@@ -43,14 +43,17 @@ Dirigent:
 <strong>Jon Svinghammar</strong>
       </span></pre>
 
-Tickets: https://tickets.musikverein.at/SelectSeats?ret=2&e=36324
+ <a href="https://www.musikverein.at/konzert/?id=00056a9d" target="_blank">
+ Tickets
+ </a>
 
   </div>
 </div>
 
 <br>
 <br>
-<br>
+
+
 
 ### Unsere nächsten Projekte
 Die Proben für unser Junikonzert beginnen bald, was für ein sprühendes Programm!
