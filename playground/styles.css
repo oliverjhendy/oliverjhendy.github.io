@@ -1,0 +1,86 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.roboto-slab-font {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.column {
+    flex: 1;
+    padding: 20px; /* Fixed padding width */
+    font-size: clamp(1em, 2vw, 1.2em); /* Example font size with a maximum of 1.5em */
+    box-sizing: border-box;
+    font-family:"Roboto Slab";
+}
+
+.column img {
+    max-width: 100%;
+    float:none;
+    height: auto; /* To maintain aspect ratio of the image */
+    /*display: block; /* Ensures the image behaves as a block element */
+}
+
+
+.container2 {
+    display: flex;
+    background-color: #B86C6C;
+    flex-wrap: wrap;
+}
+
+.column2 {
+    flex: 1;
+    float: right;
+    text-align: right;
+    padding: 20px; /* Fixed padding width */
+    font-size: clamp(2em, 4vw, 2.2em); /* Example font size with a maximum of 1.5em */
+    box-sizing: border-box;
+    font-family:"Roboto Slab";
+    font
+}
+
+.column2 img {
+    max-width: 100%;
+    float: right;
+    height: auto; /* To maintain aspect ratio of the image */
+    /*display: block; /* Ensures the image behaves as a block element */
+}
+
+@media (max-width: 700px) {
+    .column img {
+        float: left; /* Reset float for smaller screens */
+        margin-left: 0; /* Reset margin */
+        margin-bottom: 20px; /* Add margin below the image for better spacing */
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+        text-align: left; /* Reset text alignment */
+    }
+}
+
+
+.concert {
+    display: flex;
+    margin-bottom: 20px;
+    font-family: "Roboto Slab";
+    justify-content: center;
+}
+.month {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 20px;
+    flex:1 ;
+    padding-right: 20px;
+.details {
+    font-size: 18px;
+    flex:1 ; 
+}
+
