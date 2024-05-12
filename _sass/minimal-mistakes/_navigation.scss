@@ -195,7 +195,7 @@
 
     &.site-logo {
       margin-left: 0;
-      margin-right: 0.5rem;
+      margin-right: 10rem;
     }
 
     &.site-title {
@@ -261,6 +261,11 @@
     }
   }
 
+  @media (max-width: 300px) {
+    .greedy-nav .visible-links {
+      display: none;
+    }
+  }
   .hidden-links {
     position: absolute;
     top: 100%;
@@ -326,15 +331,7 @@
   }
 }
 
-.no-js {
-  .greedy-nav {
-    .visible-links {
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      overflow: visible;
-    }
-  }
-}
+
 
 /*
      Navigation list
