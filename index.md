@@ -1,7 +1,7 @@
 ---
 layout: splash
 header:
-  image: /assets/images/stage3_long.jpeg
+  image: /assets/images/stage3_wide2.jpeg
 classes: wide
 url: "/"
 
