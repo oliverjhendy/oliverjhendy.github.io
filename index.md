@@ -33,12 +33,14 @@ url: "/"
     font-size: clamp(1em, 2vw, 1.2em); /* Example font size with a maximum of 1.5em */
     box-sizing: border-box;
     font-family:"Roboto Slab";
+    min-width: 300px;
 }
 .column img {
     display:block;
     margin-left: auto;
     margin-right: auto;
     max-width: 100%;
+    min-width: 300px;
     height: auto; /* To maintain aspect ratio of the image */
     /*display: block; /* Ensures the image behaves as a block element */
 }
@@ -57,6 +59,7 @@ url: "/"
     color: maroon;
     box-sizing: border-box;
     font-family:"Roboto Slab";
+    min-width: 300px;
 }
 .column3 {
     flex: 1;
@@ -64,6 +67,7 @@ url: "/"
     font-size: clamp(1em, 2vw, 1.2em); /* Example font size with a maximum of 1.5em */
     box-sizing: border-box;
     font-family:"Roboto Slab";
+    min-width: 300px; 
 }
 .split {
     flex: 1;
