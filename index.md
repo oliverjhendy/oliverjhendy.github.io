@@ -195,7 +195,7 @@ url: "/"
     </div>
     <div class="container2">
         <div class="column2">
-            <p>11 November 2024</p>
+            <p>29 November 2024</p>
         </div>
         <div class="line"></div>
         <div class="column3">
@@ -207,7 +207,7 @@ url: "/"
     </div>
     <div class="container2">
         <div class="column2">
-            <p>9 Juni 2025</p>
+            <p>8 Juni 2025</p>
         </div>
         <div class="line"></div>
         <div class="column3">
