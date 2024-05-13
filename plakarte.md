@@ -41,25 +41,27 @@ feature_row2:
     excerpt: " **Musikverein** <br/>
     Amber Norelai - Pianist <br/> 
     Michael Stückler - Horn <br/>
-    Dirigent - Michael Juracek"
+    Michal Juraszek - Dirigent"
   - image_path: /assets/images/plakarte/210622.png
     title: "2021 SommerKonzert"
     excerpt: " **Wiener Konzerthaus** <br/>
     Catherina Lee - Violine <br/>
-    Dirigent - Michael Juracek"
+    Dirigent - Michal Juraszek"
 
 
 feature_row3: 
-    - image_path: /assets/images/plakarte/131208_PERI.jpg
-      title: "PERI"
-      excerpt: "Dirigent: Michael Juracek"
+    - image_path: /assets/images/plakarte/191213_puccini.jpg
+      title: "Puccini / Strauss/ Brahms"
+      excerpt: "Dirigent - Guillermo Calvo"
+    - image_path: /assets/images/plakarte/190505_Beethoven2.jpg
+      title: "Frühjars-Konzert"
+      excerpt: "Nazanin Aghakhani - Dirigentin<br>
+      Paul Kropfitsch - Violine"
     - image_path: /assets/images/plakarte/181125_Berlioz.jpg
-      alt: "placeholder image 2"
+      alt: "30 Jahre WAPh / Jubiläumskonzert"
       title: "Kohring | Rachmaninoff | Berlioz "
-      excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    - image_path: /assets/images/plakarte/171125_Schumann.jpg
-      title: "Tchaikovsky | Rota | Schumman"
-      excerpt: "This is some sample content that goes here with **Markdown** formatting."
+      excerpt: "Vinzenz Praxmarer - Dirigent<br>
+      Ketevan Sepashvili - Klavier"
     
 
 feature_row4:
