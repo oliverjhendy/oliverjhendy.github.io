@@ -69,12 +69,11 @@ feature_row4:
     title: "Große Klase"
     excerpt: "Dirigent: Michael Juracek"
   - image_path: /assets/images/plakarte/151125_serenita.jpg
-    alt: "placeholder image 2"
     title: "Serenita"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: ""
   - image_path: /assets/images/plakarte/150506_Motiv.jpg
     title: "Motiv"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: ""
 
 
 ---
