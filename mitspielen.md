@@ -14,4 +14,4 @@ header:
 **Mitspielen**
 
 Wir freuen uns über jeden, der sich interessiert, bei uns mitzuspielen.
-Dafür sendet bitte einen kurzen musikal.Lebenslauf und ein Video an Dani mit einem schnellen und einem elegischen Stück an ungar@waph.at
+Dafür sendet bitte einen kurzen musikalischen Lebenslauf und ein Video an Daniela Ungar mit einem schnellen und einem elegischen Stück an ungar@waph.at
