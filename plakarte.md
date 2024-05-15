@@ -65,15 +65,15 @@ feature_row3:
     
 
 feature_row4:
-  - image_path: /assets/images/plakarte/141129_groseKlase.jpg
-    title: "Große Klase"
-    excerpt: "Dirigent: Michael Juracek"
   - image_path: /assets/images/plakarte/151125_serenita.jpg
     title: "Serenita"
-    excerpt: ""
+    excerpt: "Marie Jacquot - Dirigentin"
   - image_path: /assets/images/plakarte/150506_Motiv.jpg
     title: "Motiv"
-    excerpt: ""
+    excerpt: "Azis Sadikovic - Dirigent"
+  - image_path: /assets/images/plakarte/141129_groseKlase.jpg
+    title: "Große Klasse"
+    excerpt: "Raphael Schluesselberg - Dirigent"
 
 
 ---
