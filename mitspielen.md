@@ -4,13 +4,11 @@ title:
 excerpt: "."
 permalink: /mitspielen/
 header:
-  image: /assets/images/M.J.B).HR-05657.JPG
+  image: /assets/images/mitspielen3.png
 
 
 
 ---
-
-
 **Mitspielen**
 
 Wir freuen uns über jeden, der sich interessiert, bei uns mitzuspielen.
