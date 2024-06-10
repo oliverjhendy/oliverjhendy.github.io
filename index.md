@@ -195,6 +195,18 @@ url: "/"
     </div>
     <div class="container2">
         <div class="column2">
+            <p>31 August 2024</p>
+        </div>
+        <div class="line"></div>
+        <div class="column3">
+            <br>
+            <br>
+            <p><strong>Gars Open Air</strong> </p>
+            Am 31.8. spielen wir anlässlich der EventBURG Beethovens 9. Symphonie mit einer hochkarätigen solistischen Besetzung unter der Leitung von Michal Juraszek
+        </div>
+    </div>
+    <div class="container2">
+        <div class="column2">
             <p>29 November 2024</p>
         </div>
         <div class="line"></div>

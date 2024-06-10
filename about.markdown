@@ -4,7 +4,7 @@ title:
 excerpt: "."
 permalink: /about/
 header:
-  image: /assets/images/conductor2_wide_uberuns.png
+  image: /assets/images/uberuns2.png
 
 
 sidebar:

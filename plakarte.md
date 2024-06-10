@@ -11,7 +11,7 @@ feature_row:
   - image_path: /assets/images/plakarte/240616-Rach.png
     title: "Stawinsky | Ravel | Rachmaninoff"
     excerpt: "**2024.06.16**<br/>
-    Jon Svinghammer - Dirigent <br/>
+    Jon Svinghammar - Dirigent <br/>
     Maximilian Kromer - Pianist <br/>"
 
   - image_path: /assets/images/plakarte/231124_Beethoven9.jpg
@@ -27,7 +27,7 @@ feature_row:
     alt: "placeholder image 2"
     title: "Strauss | Weber | Bruckner"
     excerpt: "**2023.06.08**<br/>  
-    Jon Svinghammer - Dirigent <br/>
+    Jon Svinghammar - Dirigent <br/>
     Franz-Joseph Labmayr - Klarinette"
     btn_label: "Read More"
     btn_class: "btn--primary"
@@ -42,7 +42,7 @@ feature_row2:
     title: "Beethoven | Strauss | Mahler"
     excerpt: " **2021.12.11** <br/>
     Michal Juraszek - Dirigent <br/>
-    Amber Norelai - Pianist <br/> 
+    Amber Norelai - Sopran <br/> 
     Michael Stückler - Horn <br/>"
   - image_path: /assets/images/plakarte/210622.png
     title: "2021 SommerKonzert"

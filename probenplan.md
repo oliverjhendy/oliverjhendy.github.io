@@ -86,3 +86,28 @@ Musikverein Konzertreihenfolge
 
 
 °Adresse Yamaha Hall: Schleierg.20, 1100  Wien
+
+
+
+===============================================================
+
+
+# Beethoven 9 in Gars Open Air 31.8.24
+## (Alternativtermin Schlechtwetter 1.9.24)
+
+**IMP**: Campus Vienna Biocenter 1, 1030
+
+Dirigent: Michal Juraszek
+Chor: Gars
+Solisten: Staatsoper
+
+**Mittwoch** <br/>
+28.8.19:00-22:00 IMP <br/>
+**Donnerstag** <br/>
+29.8. 19:00-22:00 IMP mit Solisten<br/>
+**Samstag** <br/>
+31.8. 12:00 Abfahrt Bus<br/>
+13:00-14:00 Mittagessen<br/>
+15:00-18:00 GP<br/>
+20:00 Konzert Burghof Burg Gars<br/>
+22:30 Rückfahrt Bus
