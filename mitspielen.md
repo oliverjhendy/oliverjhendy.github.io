@@ -4,7 +4,7 @@ title:
 excerpt: "."
 permalink: /mitspielen/
 header:
-  image: /assets/images/mitspielen3.png
+  image: /assets/images/mitspielen_hugel.png
 
 
 
