@@ -28,7 +28,7 @@ impressum@waph.at<br/>
 **Instagram:**<br/>
 [@w.aph](https://www.instagram.com/p/Cac3btps-yE/?hl=en)"
 ---
-## die Wiener Akademische Philharmonie
+## Die Wiener Akademische Philharmonie
 
 
 Die Wiener Akademische Philharmonie wurde im Jahr 1988 gegründet. Ursprünglich als Studentenorchester gegründet wirkt die Wiener Akademische Philharmonie heute als semiprofessionelles Orchester im In- und Ausland und musiziert mit zahlreichen namhaften Solisten und unter herausragenden jungen, wie auch renommierten Dirigenten.
