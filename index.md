@@ -186,7 +186,7 @@ url: "/"
                 <strong>Jon Svinghammar</strong><br>
                 <br>
                 <a href="https://www.musikverein.at/konzert/?id=00056a9d" target="_blank">
-                  <strong>Tickets</strong>
+                  <strong>Karten</strong>
                 </a>
         </div>
     </div>
