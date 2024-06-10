@@ -202,7 +202,10 @@ url: "/"
             <br>
             <br>
             <p><strong>Gars Open Air</strong> </p>
-            Am 31.8. spielen wir anlässlich der EventBURG Beethovens 9. Symphonie mit einer hochkarätigen solistischen Besetzung unter der Leitung von Michal Juraszek
+            Am 31.8. spielen wir anlässlich der EventBURG Beethovens 9. Symphonie mit einer hochkarätigen solistischen Besetzung unter der Leitung von Michal Juraszek<br/>
+            <a href="https://www.reservix.de/p/reservix/event/2176664" target="_blank">
+                  <strong>Karten</strong>
+                </a>
         </div>
     </div>
     <div class="container2">
@@ -214,7 +217,7 @@ url: "/"
             <br>
             <br>
             <p><strong>Wiener Konzerthaus</strong> </p>
-            Das darauf folgende Konzert findet genau an G.Puccinis 100. Todestag statt. Ihm zu Ehren komponiert Christof Unterberger eine Hommage á Puccini, das selten gehörte Fagottkonzert seines Landsmannes G.Rossini erklingt, es spielt Benedikt Dinkhauser und mit “der italienischen” 4. Symphonie von F. Mendelssohn- Bartholdy beschließen wir das Jubiläumskonzert unter der Leitung von Jon Svinghammar.
+            Das darauf folgende Konzert findet genau an G.Puccinis 100. Todestag statt. Ihm zu Ehren komponiert Christof Unterberger eine Hommage á Puccini, das selten gehörte Fagottkonzert seines Landsmannes G.Rossini erklingt, es spielt Benedikt Dinkhauser und mit “der italienischen” 4. Symphonie von F. Mendelssohn- Bartholdy beschließen wir das Jubiläumskonzert unter der Leitung von Jon Svinghammar.<br/>
         </div>
     </div>
     <div class="container2">
