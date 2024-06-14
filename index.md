@@ -229,7 +229,7 @@ url: "/"
             <br>
             <br>
             <p><strong>Wiener Musikverein</strong> </p>
-            Auferstehungssymphonie von Gustav Mahler - die 2. Symphonie - unter der Leitung von Michal Juraszek aufführen.
+            Am Pfingstsonntag werden wir die 2. Symphonie von Gustav Mahler, die “ Auferstehungssymphonie” unter der Leitung von Michal Juraszek aufführen.
         </div>
     </div>
 
