@@ -77,7 +77,7 @@ Yamaha Hall - Tutti Feuervogel, Ravel + Solist
 Yamaha Hall  + Solist 
 
 **GP**<br>
-**Freitag:14.6. 15:00-18:00**   <br>
+**Freitag:14.6. 14:30-18:00**   <br>
 Musikverein Konzertreihenfolge
 
 **Anspielprobe**<br>
