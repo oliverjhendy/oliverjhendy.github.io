@@ -1,8 +1,8 @@
 ---
 layout: single
 title:
+permalink: "/about/"
 excerpt: "excerpt: "Der Wiener Akademische Philharmonie - Über uns"
-permalink: /about/
 header:
   image: /assets/images/uberuns2.png
 
