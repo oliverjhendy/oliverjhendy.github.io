@@ -152,7 +152,7 @@ url: "/"
 </head>
 <body> 
     <div class = "container2">
-      <div class="split-main">Herzlich Wilkommen!</div>
+      <div class="split-main">Herzlich Willkommen!</div>
     </div>
     <div class = "container2">
       <div class="split2">
