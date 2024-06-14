@@ -157,7 +157,7 @@ url: "/"
     <div class = "container2">
       <div class="split2">
       Unser nächstes Konzert ist am 16. Juni 2024 im goldenen Saal des Musikvereins.
-      Wir freuen uns auf ihren Besuch! 
+      Wir freuen uns auf Ihren Besuch! 
       <br>
       <br>
       </div>

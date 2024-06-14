@@ -2,6 +2,7 @@
 title: 
 layout: splash
 permalink: /plakarte/
+excerpt: "Der Wiener Akademische Philharmonie - Konzerte" 
 date: 
 header:
   image:  /assets/images/stage2_wide_konzerte.png

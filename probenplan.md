@@ -1,6 +1,7 @@
 ---
 layout: single
 title:  
+excerpt: "Der Wiener Akademische Philharmonie - Probenplan" 
 date:   2023-11-20 06:48:27 +0100
 categories: jekyll update
 permalink: "/probenplan/"

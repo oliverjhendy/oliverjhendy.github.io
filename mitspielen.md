@@ -1,7 +1,7 @@
 ---
 layout: single
 title:
-excerpt: "."
+excerpt: "Der Wiener Akademische Philharmonie - Mitspielen"
 permalink: /mitspielen/
 header:
   image: /assets/images/mitspielen_hugel.png
