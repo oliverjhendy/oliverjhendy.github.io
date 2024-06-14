@@ -2,7 +2,7 @@
 layout: single
 title:
 permalink: "/about/"
-excerpt: "excerpt: "Der Wiener Akademische Philharmonie - Über uns"
+excerpt: "Der Wiener Akademische Philharmonie - Über uns"
 header:
   image: /assets/images/uberuns2.png
 
