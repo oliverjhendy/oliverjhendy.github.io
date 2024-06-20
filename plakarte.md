@@ -20,7 +20,7 @@ feature_row:
     title: "Beethoven Symphony No. 9"
     excerpt: "**2023.11.24**<br/>
     Michal Juraszek - Dirigent <br/>
-    ProCoro Wien<br/>  
+    ProChoro Wien<br/>  
     Krsteska / Kuryatnikova / Pollak / Aigner<br/>
     "
 
@@ -38,7 +38,7 @@ feature_row2:
     title: "Verdi Requiem"
     excerpt: "**2022.11.20**<br/>
     Michal Juraszek - Dirigent <br/>
-    ProCoro Wien<br/>"
+    ProChoro Wien<br/>"
   - image_path: /assets/images/plakarte/211211-Beethven_strauss_Mahler.png
     title: "Beethoven | Strauss | Mahler"
     excerpt: " **2021.12.11** <br/>
