@@ -44,6 +44,11 @@ url: "/"
     height: auto; /* To maintain aspect ratio of the image */
     /*display: block; /* Ensures the image behaves as a block element */
 }
+.container-main-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container2 {
     display: flex;
     flex-wrap: wrap;
@@ -98,7 +103,7 @@ url: "/"
     color: black;
     box-sizing: border-box;
     font-family:"Roboto Slab";
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 .line {
     width: 2px;
@@ -156,57 +161,18 @@ url: "/"
     </div>
     <div class = "container2">
       <div class="split2">
-      Unser nächstes Konzert ist am 16. Juni 2024 im goldenen Saal des Musikvereins.
-      Wir freuen uns auf Ihren Besuch! 
+      Am 31.8. spielen wir im Rahmen der KulturBURG Beethovens 9. Symphonie mit einer hochkarätigen solistischen Besetzung unter der Leitung von Michal Juraszek. Wir freuen uns über Ihren Besuch! <a href="https://www.reservix.de/p/reservix/event/2176664" target="_blank">
+                  <strong>Karten</strong>
+                </a>
       <br>
       <br>
       </div>
     </div>
-    <div class="container">
-        <div class="column">
-            <img src="../assets/images/plakarte/240616-Rach.png" alt="Image" width="400px">
-        </div>
-        <div class="column">
-            <strong>16.06.2024 / 19:30 </strong><br>
-            Wiener Musikverein / Goldener Saal <br>
-                <br>
-                <em>Maurice Ravel</em><br>
-                >>Konzert für Klavier und Orchester G-Dur<<<br>
-                <br>
-                <em>Igor Strawinsky</em><br>
-                >>Suite aus dem Ballett „Der Feuervogel“; Fassung 1919<<<br>
-                <br>
-                <em>Sergej Wassilewitsch Rachmaninoff</em><br>
-                >>Symphonie Nr. 2 e-Moll, op. 27<<<br>
-                <br>
-                Pianist:<br>
-                <span style="font-weight: bold;">Maximilian Kromer</span> <br>
-                <br>
-                Dirigent:<br>
-                <strong>Jon Svinghammar</strong><br>
-                <br>
-                <a href="https://www.musikverein.at/konzert/?id=00056a9d" target="_blank">
-                  <strong>Karten</strong>
-                </a>
-        </div>
+    <div class="container-main-image">
+            <img src="../assets/images/plakarte/2024_OBG_KulturBURG.jpg" alt="Image" width="600px">
     </div>
     <div class = "container2">
       <div class="split">Vorschau</div>
-    </div>
-    <div class="container2">
-        <div class="column2">
-            <p>31 August 2024</p>
-        </div>
-        <div class="line"></div>
-        <div class="column3">
-            <br>
-            <br>
-            <p><strong>Gars Open Air</strong> </p>
-            Am 31.8. spielen wir anlässlich der EventBURG Beethovens 9. Symphonie mit einer hochkarätigen solistischen Besetzung unter der Leitung von Michal Juraszek<br/>
-            <a href="https://www.reservix.de/p/reservix/event/2176664" target="_blank">
-                  <strong>Karten</strong>
-                </a>
-        </div>
     </div>
     <div class="container2">
         <div class="column2">
