@@ -1,6 +1,7 @@
 ---
 layout: splash
-header:
+excerpt: "Die Wiener Akademische Philharmonie"
+header: 
   image: /assets/images/stage3_long.jpeg
 classes: wide
 url: "/"
