@@ -4,7 +4,6 @@ title: "Die Wiener Akademische Philharmonie"
 excerpt: "Die Wiener Akademische Philharmonie"
 header: 
   image: /assets/images/stage3_long.jpeg
-classes: wide
 url: "/"
 
 
