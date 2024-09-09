@@ -20,7 +20,12 @@ body {
     overflow: hidden;
   }
 }
-
+article {
+  max-width: 1400px !important;
+}
+section {
+  max-width: 1400px !important;
+}
 h1,
 h2,
 h3,
