@@ -161,6 +161,10 @@ url: "/"
     <div class = "container2">
       <div class="split-main">Herzlich Willkommen!</div>
     </div>
+    <div class = "container2">
+      <div class="split2" style = "font-size: 1.5em"> Wir freuen uns darauf, Sie bei unserem nächsten Konzert zu sehen. <br>
+</div>
+    </div>
     <div class="container">
         <div class="column">
         <br>
