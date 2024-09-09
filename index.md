@@ -79,7 +79,7 @@ url: "/"
 .split {
     flex: 1;
     text-align:left;
-    padding: 20px; /* Fixed padding width */
+    padding: 10px; /* Fixed padding width */
     font-size: clamp(2em, 4vw, 2.2em); /* Example font size with a maximum of 1.5em */
     color: maroon;
     box-sizing: border-box;
@@ -116,6 +116,7 @@ url: "/"
         float: left; /* Reset float for smaller screens */
         margin-left: 0; /* Reset margin */
         margin-bottom: 20px; /* Add margin below the image for better spacing */
+        margin-top: 20px;
     }
     .column {
         flex: 100%;
@@ -161,17 +162,34 @@ url: "/"
     <div class = "container2">
       <div class="split-main">Herzlich Willkommen!</div>
     </div>
-    <div class = "container2">
-      <div class="split2">
-      Am 31.8. spielen wir im Rahmen der KulturBURG Beethovens 9. Symphonie mit einer hochkarätigen solistischen Besetzung unter der Leitung von Michal Juraszek. Wir freuen uns über Ihren Besuch! <a href="https://www.reservix.de/p/reservix/event/2176664" target="_blank">
-                  <strong>Karten</strong>
-                </a>
-      <br>
-      <br>
-      </div>
-    </div>
-    <div class="container-main-image">
-            <img src="../assets/images/plakarte/2024_OBG_KulturBURG.jpg" alt="Image" width="600px">
+    <div class="container">
+        <div class="column">
+        <br>
+            <img src="../assets/images/mozartsall_waph_wave.jpg" alt="Image" width="550px">
+        </div>
+        <div class="column">
+            <strong style="font-size: 1.4em;color: maroon">29.11.2024 / 19:30 <br>
+            Wiener Konzerthaus / Mozartsaal <br>
+            <a href="https://konzerthaus.at/concert/eventid/62252" style="text-decoration: none;">
+                    <i class="fas fa-ticket-alt"></i> Karten
+                </a></strong>
+                <br>
+                <br>
+                <em>Christof Unterberger</em><br>
+                >>Hommage á Puccini<<<br>
+                <br>
+                <em>Gioachino Rossini </em><br>
+                >>Fagottkonzert<<<br>
+                <br>
+                <em>Felix Mendelssohn Bartholdy</em><br>
+                >>4. Sinfonie in A-Dur op. 90, „Italienische“<<<br>
+                <br>
+                Fagott:
+                <span style="font-weight: bold;">Benedikt Dinkhauser</span> <br>
+                <br>
+                Dirigent:
+                <strong>Jon Svinghammar</strong>
+        </div>
     </div>
     <div class = "container2">
       <div class="split">Vorschau</div>
