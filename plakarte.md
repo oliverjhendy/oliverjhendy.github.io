@@ -122,7 +122,7 @@ feature_row6:
     title: "Ansicht"
     excerpt: "**2012.05.16**<br/>
     Raphael Schluesselberg - Dirigent<br/>
-    Adrian Eröd - Bariton
+    Adrian Eröd - Bariton<br/>
     Andreas Gschmeidler - Oboe"
 
 
@@ -139,7 +139,7 @@ feature_row7:
     Yuka Shindo - Klavier"
   - image_path: /assets/images/plakarte/110403_messiah_1.jpeg
     title: "Messiah"
-    excerpt: "**2011.06.30**<br/>
+    excerpt: "**2011.04.03**<br/>
     Raphael Eröd - Dirigent<br/>
     Coro Belmonte"
 
