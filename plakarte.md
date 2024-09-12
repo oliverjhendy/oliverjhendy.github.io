@@ -120,12 +120,33 @@ feature_row6:
     title: "PERI"
     excerpt: "**2013.12.08**<br/>
     Raphael Schluesselberg - Dirigent<br/>
+  - image_path: /assets/images/plakarte/120516_Ansicht.jpg
+    title: "Ansicht"
+    excerpt: "**2012.05.16**<br/>
+    Raphael Schluesselberg - Dirigent<br/>
+    Adrian Eröd - Bariton
+    Andreas Gschmeidler - Oboe"
+
+
+
+feature_row7:
+  - image_path: /assets/images/plakarte/111218__1.jpeg
+    title: "Elgar | Nielsen | Mendelssohn"
+    excerpt: "**2011.12.18**<br/>
+    Raphael Schluesselberg - Dirigent<br/>
+    Karl-Heinz Schütz - Flöte"
   - image_path: /assets/images/plakarte/110630_romatisch.jpg
     title: "Romantisch"
     excerpt: "**2011.06.30**<br/>
     Gerrit Prießnitz - Dirigent<br/>
     Yuka Shindo - Klavier"
+  - image_path: /assets/images/plakarte/110403_messiah_1.jpeg
+    title: "Messiah"
+    excerpt: "**2011.06.30**<br/>
+    Raphael Eröd - Dirigent<br/>
+    Coro Belmonte"
 
+    
 ---
 
 {% include feature_row id="intro" type="center" %}
@@ -142,3 +163,5 @@ feature_row6:
 {% include feature_row id="feature_row4" %}
 
 {% include feature_row id="feature_row5" %}
+{% include feature_row id="feature_row6" %}
+{% include feature_row id="feature_row7" %}
