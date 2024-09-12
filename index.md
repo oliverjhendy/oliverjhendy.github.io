@@ -199,18 +199,6 @@ url: "/"
     </div>
     <div class="container2">
         <div class="column2">
-            <p>29 November 2024</p>
-        </div>
-        <div class="line"></div>
-        <div class="column3">
-            <br>
-            <br>
-            <p><strong>Wiener Konzerthaus</strong> </p>
-            Das darauf folgende Konzert findet genau an G.Puccinis 100. Todestag statt. Ihm zu Ehren komponiert Christof Unterberger eine Hommage á Puccini, das selten gehörte Fagottkonzert seines Landsmannes G.Rossini erklingt, es spielt Benedikt Dinkhauser und mit “der italienischen” 4. Symphonie von F. Mendelssohn- Bartholdy beschließen wir das Jubiläumskonzert unter der Leitung von Jon Svinghammar.<br/>
-        </div>
-    </div>
-    <div class="container2">
-        <div class="column2">
             <p>8 Juni 2025</p>
         </div>
         <div class="line"></div>
