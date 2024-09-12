@@ -106,8 +106,6 @@ feature_row5:
     Azis Sadikovic - Dirigent<br/>
     Kirill Kobantschenko - Violine"
 
-
-
 feature_row6:
   - image_path: /assets/images/plakarte/141129_groseKlase.jpg
     title: "große Klasse"
@@ -119,14 +117,13 @@ feature_row6:
   - image_path: /assets/images/plakarte/131208_PERI.jpg
     title: "PERI"
     excerpt: "**2013.12.08**<br/>
-    Raphael Schluesselberg - Dirigent<br/>
+    Raphael Schluesselberg - Dirigent<br/>"
   - image_path: /assets/images/plakarte/120516_Ansicht.jpg
     title: "Ansicht"
     excerpt: "**2012.05.16**<br/>
     Raphael Schluesselberg - Dirigent<br/>
     Adrian Eröd - Bariton
     Andreas Gschmeidler - Oboe"
-
 
 
 feature_row7:
@@ -147,13 +144,12 @@ feature_row7:
     Coro Belmonte"
 
     
+
 ---
 
 {% include feature_row id="intro" type="center" %}
 
 {% include feature_row %}
-
-
 
 {% include feature_row id="feature_row2" %}
 
@@ -161,7 +157,6 @@ feature_row7:
 {% include feature_row id="feature_row3" %}
 
 {% include feature_row id="feature_row4" %}
-
 {% include feature_row id="feature_row5" %}
 {% include feature_row id="feature_row6" %}
 {% include feature_row id="feature_row7" %}
