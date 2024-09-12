@@ -91,13 +91,11 @@ feature_row4:
 
 
 feature_row5:
-  - image_path: /assets/images/plakarte/141129_groseKlase.jpg
-    title: "große Klasse"
-    excerpt: "**2014.11.29**<br/>
-    Raphael Schluesselberg - Dirigent<br/>
-    Sebastian Gürtler - Violine <br/>
-    Florian Berner - Violoncello <br/>
-    Christoph Berner - Klavier <br/>"
+  - image_path: /assets/images/plakarte/160607_Faun.jpg
+    title: "FAUN"
+    excerpt: "**2016.06.07**<br/>
+    Azis Sadikovic - Dirigent<br/>
+    Maria Radutu - Klavier <br/>"
   - image_path: /assets/images/plakarte/151125_serenita.jpg
     title: "serenità"
     excerpt: "**2015.11.25**<br/>
@@ -108,6 +106,25 @@ feature_row5:
     Azis Sadikovic - Dirigent<br/>
     Kirill Kobantschenko - Violine"
 
+
+
+feature_row6:
+  - image_path: /assets/images/plakarte/141129_groseKlase.jpg
+    title: "große Klasse"
+    excerpt: "**2014.11.29**<br/>
+    Raphael Schluesselberg - Dirigent<br/>
+    Sebastian Gürtler - Violine <br/>
+    Florian Berner - Violoncello <br/>
+    Christoph Berner - Klavier <br/>"
+  - image_path: /assets/images/plakarte/131208_PERI.jpg
+    title: "PERI"
+    excerpt: "**2013.12.08**<br/>
+    Raphael Schluesselberg - Dirigent<br/>
+  - image_path: /assets/images/plakarte/110630_romatisch.jpg
+    title: "Romantisch"
+    excerpt: "**2011.06.30**<br/>
+    Gerrit Prießnitz - Dirigent<br/>
+    Yuka Shindo - Klavier"
 
 ---
 
