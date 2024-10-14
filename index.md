@@ -171,6 +171,7 @@ url: "/"
             <img src="../assets/images/plakarte/241129_italien.jpg" alt="Image" width="550px">
         </div>
         <div class="column">
+            <br>
             <strong style="font-size: 1.4em;color: maroon">29.11.2024 / 19:30 <br>
             Wiener Konzerthaus / Mozartsaal <br>
             <a href="https://konzerthaus.at/concert/eventid/62252" style="text-decoration: none;">
