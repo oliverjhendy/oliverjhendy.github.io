@@ -168,7 +168,7 @@ url: "/"
     <div class="container">
         <div class="column">
         <br>
-            <img src="../assets/images/mozartsall_waph_wave.jpg" alt="Image" width="550px">
+            <img src="../assets/images/plakarte/241129_italien.jpg" alt="Image" width="550px">
         </div>
         <div class="column">
             <strong style="font-size: 1.4em;color: maroon">29.11.2024 / 19:30 <br>
