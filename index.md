@@ -190,6 +190,9 @@ url: "/"
                 Fagott:
                 <span style="font-weight: bold;">Benedikt Dinkhauser</span> <br>
                 <br>
+                Sprecher:
+                <span style="font-weight: bold;">Faris Rahoma</span> <br>
+                <br>
                 Dirigent:
                 <strong>Jon Svinghammar</strong>
         </div>
