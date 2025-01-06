@@ -168,52 +168,30 @@ url: "/"
     <div class="container">
         <div class="column">
         <br>
-            <img src="../assets/images/plakarte/241129_italien.jpg" alt="Image" width="550px">
+            <img src="../assets/images/Musikverein.jpg" alt="Image" width="550px">
         </div>
         <div class="column">
             <br>
-            <strong style="font-size: 1.4em;color: maroon">29.11.2024 / 19:30 <br>
-            Wiener Konzerthaus / Mozartsaal <br>
-            <a href="https://konzerthaus.at/concert/eventid/62252" style="text-decoration: none;">
+            <strong style="font-size: 1.4em;color: maroon">08.06.2025 / 19:30 <br>
+            <strong style="font-size: 1.4em;color: maroon">09.06.2025 / 11:00 <br>
+            Musikverein / Goldener Saal <br>
+            <!-- <a href="https://konzerthaus.at/concert/eventid/62252" style="text-decoration: none;">
                     <i class="fas fa-ticket-alt"></i> Karten
-                </a></strong>
+                </a></strong> -->
                 <br>
                 <br>
-                <em>Christof Unterberger</em><br>
-                >>Hommage á Puccini<<<br>
+                <em>Gustav Mahler</em><br>
+                >>Sinfonie Nr. 2 in c-Moll<<<br>
                 <br>
-                <em>Gioachino Rossini </em><br>
-                >>Fagottkonzert<<<br>
+                Sopran:
+                <span style="font-weight: bold;">Aleksandra Szmyd</span> <br>
                 <br>
-                <em>Felix Mendelssohn Bartholdy</em><br>
-                >>4. Sinfonie in A-Dur op. 90, „Italienische“<<<br>
-                <br>
-                Fagott:
-                <span style="font-weight: bold;">Benedikt Dinkhauser</span> <br>
-                <br>
-                Sprecher:
-                <span style="font-weight: bold;">Faris Rahoma</span> <br>
+                Mezzosopran:
+                <span style="font-weight: bold;">Sofia Vinnik</span> <br>
                 <br>
                 Dirigent:
-                <strong>Jon Svinghammar</strong>
-        </div>
-    </div>
-    <div class = "container2">
-      <div class="split">Vorschau</div>
-    </div>
-    <div class="container2">
-        <div class="column2">
-            <p>8 Juni 2025</p>
-        </div>
-        <div class="line"></div>
-        <div class="column3">
-            <br>
-            <br>
-            <p><strong>Wiener Musikverein</strong> </p>
-            Am Pfingstsonntag werden wir die 2. Symphonie von Gustav Mahler, die “ Auferstehungssymphonie” unter der Leitung von Michal Juraszek aufführen.
-        </div>
-    </div>
-
+                <strong>Michał Juraszek</strong>
+               
     
 </body>
 </html>
