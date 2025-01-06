@@ -194,8 +194,4 @@ url: "/"
         </div>
                
     
-</body>
-</html>
-<br>
-<br>
 
