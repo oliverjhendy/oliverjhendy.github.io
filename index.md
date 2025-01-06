@@ -191,6 +191,7 @@ url: "/"
                 <br>
                 Dirigent:
                 <strong>Michał Juraszek</strong>
+        </div>
                
     
 </body>
