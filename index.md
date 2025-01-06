@@ -180,8 +180,8 @@ url: "/"
                 </a></strong> -->
                 <br>
                 <br>
-                <em>Gustav Mahler</em><br>
-                >>Sinfonie Nr. 2 in c-Moll<<<br>
+                <span style="font-size: 1.4em;"><em>Gustav Mahler</em><br>
+                >>Sinfonie Nr. 2 in c-Moll<<<br></span>
                 <br>
                 Sopran:
                 <span style="font-weight: bold;">Aleksandra Szmyd</span> <br>
