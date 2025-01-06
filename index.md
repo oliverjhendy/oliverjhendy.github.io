@@ -174,7 +174,7 @@ url: "/"
             <br>
             <strong style="font-size: 1.4em;color: maroon">08.06.2025 / 19:30 <br></strong> 
             <strong style="font-size: 1.4em;color: maroon">09.06.2025 / 11:00 <br></strong> 
-            <em>Musikverein / Goldener Saal</em><br>
+            <span style="font-weight: bold;">Musikverein / Goldener Saal</span><br>
             <!-- <a href="https://konzerthaus.at/concert/eventid/62252" style="text-decoration: none;">
                     <i class="fas fa-ticket-alt"></i> Karten
                 </a></strong> -->
