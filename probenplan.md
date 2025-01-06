@@ -11,7 +11,7 @@ header:
 ---
 
 
-# Italienische Reise: 29.11.24 Mozartsaal<br/>
+# Mahler 2 <br/>
 
 TERMINE<br/>
 Mo. 03.03.25, 19:00 - 22:00 Uhr, Notenausgabe IMP oder Cafe Stein<br/>
