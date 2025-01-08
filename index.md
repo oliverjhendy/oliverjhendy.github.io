@@ -173,31 +173,25 @@ url: "/"
         <div class="column">
             <br>
             <span style="font-weight: bold;">Musikverein / Goldener Saal</span><br>
-            <strong style="font-size: 1.4em;color: maroon">08.06.2025 / 19:30 <br></strong> 
-            <strong style="font-size: 1.4em;color: maroon">09.06.2025 / 11:00 <br></strong> 
+            08.06.2025 / 19:30 <br>
+            09.06.2025 / 11:00 <br>
             <!-- <a href="https://konzerthaus.at/concert/eventid/62252" style="text-decoration: none;">
                     <i class="fas fa-ticket-alt"></i> Karten
                 </a></strong> -->
                 <br>
-                <br>
                 <strong style="font-size: 1.4em;color: maroon"><em>Gustav Mahler</em><br>
                 >>Sinfonie Nr. 2 in c-Moll<<<br></strong>
-                <br>
                 <br>
                 ProChoro<br>
                 Consortium Musicum<br>
                 Schola Cantorum<br>
                 Männerchor der Kärtner in Wien<br>
                 <br>
+                Sopran:<span style="font-weight: bold;">Aleksandra Szmyd</span> <br>
+                Mezzosopran:<span style="font-weight: bold;">Sofia Vinnik</span> <br>
                 <br>
-                Sopran:
-                <span style="font-weight: bold;">Aleksandra Szmyd</span> <br>
-                <br>
-                Mezzosopran:
-                <span style="font-weight: bold;">Sofia Vinnik</span> <br>
-                <br>
-                Dirigent:
-                <strong>Michał Juraszek</strong>
+                Dirigent:<strong>Michał Juraszek</strong><br>
+
         </div>
                
     
