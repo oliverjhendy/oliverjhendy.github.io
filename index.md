@@ -182,15 +182,17 @@ url: "/"
                 <strong style="font-size: 1.4em;color: maroon"><em>Gustav Mahler</em><br>
                 >>Sinfonie Nr. 2 in c-Moll<<<br></strong>
                 <br>
+                Dirigent: <strong>Michał Juraszek</strong><br>
+                <br>
+                Sopran: <span style="font-weight: bold;">Aleksandra Szmyd</span> <br>
+                Mezzosopran: <span style="font-weight: bold;">Sofia Vinnik</span> <br>
+                <br>
                 ProChoro<br>
                 Consortium Musicum<br>
                 Schola Cantorum<br>
                 Männerchor der Kärtner in Wien<br>
-                <br>
-                Sopran:<span style="font-weight: bold;">Aleksandra Szmyd</span> <br>
-                Mezzosopran:<span style="font-weight: bold;">Sofia Vinnik</span> <br>
-                <br>
-                Dirigent:<strong>Michał Juraszek</strong><br>
+                
+                
 
         </div>
                
