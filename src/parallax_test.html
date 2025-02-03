@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiener Akademische Philharmonie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto-slab': ['"Roboto Slab"', 'serif']
+                    },
+                    colors: {
+                        'maroon': '#800000'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Parallax container */
+        .parallax-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Parallax background image */
+        .parallax {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            will-change: transform;
+            transition: opacity .5s ease-in-out;
+        }
+        /* Black overlay for fade effect */
+        .fade-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Navbar */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px 20px;
+            box-shadow: 0 2px 1px -1px rgb(211, 211, 211);
+        }
+
+        /* Body text font and alignment */
+        .body-text {
+            line-height: 1.5;
+        }
+
+</style>
+    </style>
+</head>
+<body class="bg-[#faf8f3] font-roboto-slab">
+
+<!-- Parallax Image Section -->
+<div class="parallax-container">
+    <div class="parallax" id="parallaxImage"></div>
+    <div class="fade-overlay" id="fadeOverlay"></div>
+
+    <!-- Image in the top left with padding -->
+    <h1 class="absolute top-15 left-5 lg:left-10 p-12">
+        <img src="/assets/images/waph-logo-large.png" 
+            alt="WAPH Logo" 
+            class="w-[14em] sm:w-[18em] md:w-[22em] lg:w-[25em] max-w-full h-auto">
+    </h1>
+    <!-- Scroll Cue -->
+    <div class="relative w-screen h-screen bg-cover bg-center" style="background-image: url('your-image.jpg');">
+        <!-- Scroll Cue -->
+        <div class="absolute bottom-6 w-full flex justify-center -z-1">
+          <div
+            onclick="scrollToSection('navbar')"
+            class="animate-bounce text-white flex items-center justify-center border border-white rounded-full h-12 w-12 cursor-pointer"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-[#faf8f3] px-4 py-6 mt-4 sticky top-0 z-50">
+        <div class="mx-auto flex items-end justify-between">
+            <a href="/src/index.html">
+                <img src="/assets/images/waph-logo.png" alt="WAPH Logo" class="h-20 mr-4 px-[1.5em] transition-transform duration-200 ease-in-out hover:scale-105">
+            </a>
+            <div class="hidden md:flex space-x-3">
+                <a href="/src/konzerte.html" class="text-black hover:text-[#800000] mr-0 text-lg px-3 py-2">Konzerte</a>
+                <a href="/src/uber_uns.html" class="text-black hover:text-[#800000] text-lg px-3 py-2">Über Uns</a>
+                <a href="#" class="text-black hover:text-[#800000] text-lg px-3 py-2">Mitglieder</a>
+                <a href="#" class="text-black hover:text-[#800000] text-lg px-3 py-2">Kontakt</a>
+            </div>
+            <div class="md:hidden">
+                <button class="hamburger-menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    </body>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+        const images = [
+            "/assets/images/stage3_wide.jpeg",
+            "/assets/images/stage2_long2.jpeg",
+            "/assets/images/waph_hugel_main.jpg",
+            
+        ];
+
+        let currentIndex = 0;
+        const parallaxImage = document.getElementById("parallaxImage");
+        const fadeOverlay = document.getElementById("fadeOverlay");
+
+        // Set the first image immediately
+        parallaxImage.style.backgroundImage = `url(${images[0]})`;
+
+        // Preload all images
+        images.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        function changeBackground() {
+            const nextIndex = (currentIndex + 1) % images.length;
+            const nextImage = images[nextIndex];
+
+            // Fade to black
+            fadeOverlay.style.opacity = "1";
+
+            // Preload next image before switching
+            setTimeout(() => {
+                parallaxImage.style.backgroundImage = `url(${nextImage})`;
+                fadeOverlay.style.opacity = "0";
+                currentIndex = nextIndex;
+            }, 500); // Wait for black fade before switching
+        }
+
+        setInterval(changeBackground, 5000); // Change every 5 seconds
+    });
+
+    </script>

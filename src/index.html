@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiener Akademische Philharmonie</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto-slab': ['"Roboto Slab"', 'serif']
+                    },
+                    colors: {
+                        'maroon': '#800000'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Parallax container */
+        .parallax-container {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Parallax background image */
+        .parallax {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            will-change: transform;
+            transition: opacity .5s ease-in-out;
+        }
+        /* Black overlay for fade effect */
+        .fade-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+
+        /* Navbar */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 15px 20px;
+            box-shadow: 0 2px 1px -1px rgb(211, 211, 211);
+        }
+
+        /* Body text font and alignment */
+        .body-text {
+            line-height: 1.5;
+        }
+
+</style>
+    </style>
+</head>
+<body class="bg-[#faf8f3] font-roboto-slab">
+
+<!-- Parallax Image Section -->
+<div class="parallax-container">
+    <div class="parallax z-4" id="parallaxImage"></div>
+    <div class="fade-overlay z-4" id="fadeOverlay"></div>
+
+    <!-- Image in the top left with padding -->
+    <h1 class="absolute top-15 left-5 lg:left-10 p-12">
+        <img src="/assets/images/waph-logo-large.png" 
+            alt="WAPH Logo" 
+            class="w-[14em] sm:w-[18em] md:w-[22em] lg:w-[25em] max-w-full h-auto">
+    </h1>
+    <!-- Scroll Cue -->
+    <div class="relative w-screen h-screen bg-cover bg-center" style="background-image: url('your-image.jpg');">
+        <!-- Scroll Cue -->
+        <div class="absolute bottom-6 w-full flex justify-center -z-0">
+          <div
+            onclick="scrollToSection('navbar')"
+            class="animate-bounce text-white flex items-center justify-center border border-white rounded-full h-12 w-12 cursor-pointer"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+            </svg>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-[#faf8f3] px-4 py-6 mt-4 sticky top-0 z-50">
+        <div class="mx-auto flex items-end justify-between">
+            <a href="/src/index.html">
+                <img src="/assets/images/waph-logo.png" alt="WAPH Logo" class="h-20 mr-4 px-[1.5em] transition-transform duration-200 ease-in-out hover:scale-105">
+            </a>
+            <div class="hidden md:flex space-x-3">
+                <a href="/src/konzerte.html" class="text-black hover:text-[#800000] mr-0 text-lg px-3 py-2">Konzerte</a>
+                <a href="/src/uber_uns.html" class="text-black hover:text-[#800000] text-lg px-3 py-2">Über Uns</a>
+                <a href="/src/mitglieder.html" class="text-black hover:text-[#800000] text-lg px-3 py-2">Mitglieder</a>
+                <a href="/src/kontakt.html" class="text-black hover:text-[#800000] text-lg px-3 py-2">Kontakt</a>
+            </div>
+            <div class="md:hidden">
+                <button id="hamburgerButton" class="hamburger-menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu links (initially hidden) -->
+    <div id="mobileMenu" class="sticky top-[110px] left-0 w-full bg-[#faf8f3] hidden md:hidden space-y-3 py-4 shadow-lg z-40">
+        <a href="/src/konzerte.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Konzerte</a>
+        <a href="/src/uber_uns.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Über Uns</a>
+        <a href="/src/mitglieder.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Mitglieder</a>
+        <a href="/src/kontakt.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Kontakt</a>
+    </div>
+
+    <script>
+        document.getElementById("hamburgerButton").addEventListener("click", function() {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        });
+        function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("hidden"); // Toggles the visibility of the mobile menu
+        }
+    </script>
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 mt-8 max-w-[1204px]">
+        <br>
+        <div class="text-5xl text-maroon mb-4">Herzlich Willkommen!</div>
+        
+        <div class="text-base md:text-2xl lg:text-3xl mb-8">
+            Wir freuen uns darauf, Sie bei unserem nächsten Konzert zu sehen.
+        </div>
+        
+        <div class="grid grid-cols-1 sm:grid-cols-7 gap-[3em]">
+            <div class="w-full col-span-3">
+                <img src="../assets/images/Musikverein.jpg" alt="Musikverein" class="w-full h-auto object-cover">
+            </div>
+            
+            <div class ="body-text col-span-4">
+                <div class="font-bold mb-2">Musikverein / Goldener Saal</div>
+                
+                <div class="mb-4">
+                    08.06.2025 / 19:30 <br>
+                    09.06.2025 / 11:00
+                </div>
+                <br>
+                <div class="text-4xl text-maroon italic mb-4">
+                    Gustav Mahler<br>
+                    >>Sinfonie Nr. 2 in c-Moll<<<
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Michał Juraszek<br>
+                    <br>
+                    <strong>Sopran:</strong> Aleksandra Szmyd<br>
+                    <strong>Mezzosopran:</strong> Sofia Vinnik
+                </div>
+                
+                <div>
+                    ProChoro<br>
+                    Consortium Musicum<br>
+                    Schola Cantorum<br>
+                    Männerchor der Kärtner in Wien
+                </div>
+            </div>
+            <br>
+        </div>
+    </div>
+    <!-- Tickets Section -->
+    <div id="container2" class="bg-[#660000] text-white py-12 px-4">
+        <div class="max-w-[1204px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center px-4">
+
+            <!-- Ticket Info -->
+            <div class="text-center md:text-left">
+                <h2 class="text-4xl mb-4 text-yellow-100">Karten...</h2>
+                <p class="text-lg">können über den Musikverein erworben werden. Wir freuen uns auf Ihren Besuch!</p>
+            </div>
+
+            <!-- Ticket Card 1 -->
+            <a href="https://www.musikverein.at/konzert/?id=00061781" class="bg-[#faf8f3] border-2 border-[#d4af37] p-6 rounded-3xl shadow-lg text-left block transition transform hover:scale-[1.02]">
+                <div class="flex items-center">
+                    <img src="/assets/images/musikverein-logo.png" alt="Musikverein Logo" class="h-16 mr-4">
+                    <div>
+                        <h3 class="text-xl text-black font-semibold">Sonntag, 8. Juni</h3>
+                        <p class="text-lg text-black">19:30</p>
+                        <p class="text-lg text-black mt-2">Goldener Saal</p>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Ticket Card 2 -->
+            <a href="https://www.musikverein.at/konzert/?id=000696bd" class="bg-[#faf8f3] border-2 border-[#d4af37] p-6 rounded-3xl shadow-lg text-left block transition transform hover:scale-[1.02]">
+                <div class="flex items-center">
+                    <img src="/assets/images/musikverein-logo.png" alt="Musikverein Logo" class="h-16 mr-4">
+                    <div>
+                        <h3 class="text-xl text-black font-semibold">Montag, 9. Juni</h3>
+                        <p class="text-lg text-black">11:00</p>
+                        <p class="text-lg text-black mt-2">Goldener Saal</p>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <!-- Orchestra Section -->
+    <div class="bg-[#faf8f3] text-black py-12 px-4">
+        <div class="max-w-[1204px] mx-auto">
+
+            <!-- Orchestra History -->
+            <div class="text-left mb-12">
+                <h2 class="text-4xl text-maroon font-bold mb-4">Wer ist Waph?</h2>
+                <p class="text-lg max-w-4xl">Die Wiener Akademische Philharmonie wurde im Jahr 1988 gegründet. Ursprünglich als Studentenorchester gegründet, wirkt die Wiener Akademische Philharmonie heute als semiprofessionelles Orchester im In- und Ausland und musiziert mit zahlreichen namhaften Solisten und unter herausragenden jungen, wie auch renommierten Dirigenten.</p>
+            </div>
+
+            <!-- Orchestra Gallery -->
+            <div class="grid justify-center items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
+                <!-- Image 1 -->
+                <div class="overflow-hidden">
+                    <img src="/assets/images/mozartsall_waph_wave.jpg" alt="Musician 1" class="object-contain ">
+                </div>
+                <!-- Image 2 -->
+                <div class="overflow-hidden">
+                    <img src="/assets/images/conductor_long.JPG" alt="Musician 2" class="object-conatain">
+                </div>
+                <!-- Image 3 -->
+                <div class="overflow-hidden">
+                    <img src="/assets/images/waph17.jpg" alt="Musician 3" class="w-full h-full object-contain">
+                </div>
+            </div>
+
+        </div>
+
+       
+    </div>
+     <!-- Full-Screen Image -->
+     <div class="relative w-full object-contain">
+        <img src="/assets/images/waph_hugel_cropped.jpg" alt="Orchestra Performance" class="w-full h-full object-cover">
+    </div>
+
+    <!------Karten button----->
+    <a onclick="scrollToSection('container2')"
+    class="fixed right-0 top-6/7 -translate-y-1/2 bg-[#800000] text-yellow-100 px-2 py-6  z-1000
+        hover:translate-x-0.5 hover:shadow-lg transition-transform [writing-mode:vertical-lr] cursor-pointer"
+    >
+    KARTEN
+    </a>
+    <script>
+        // Parallax scrolling effect
+        window.addEventListener('scroll', function() {
+            const parallax = document.getElementById('parallaxImage');
+            const scrollPosition = window.pageYOffset;
+            parallax.style.transform = 'translateY(' + (scrollPosition * 0.33) + 'px)';
+        });
+        function scrollToSection(destination) {
+            const target = document.getElementById(destination);
+            let targetPosition = target.getBoundingClientRect().top + window.scrollY;
+            
+            if (destination !== 'navbar') {
+                targetPosition = targetPosition-130 ;
+            }
+            
+            
+            const startPosition = window.scrollY;
+            const distance = targetPosition - startPosition;
+            const duration = 2500; // Scroll duration in milliseconds
+            let start = null;
+            
+            // Easing function: easeInOutCubic
+            const easeInOutCubic = (t) => {
+            return t < 0.5
+                ? 4 * t * t * t
+                : 1 - Math.pow(-2 * t + 2, 3) / 2;
+            };
+
+            function animationStep(timestamp) {
+            if (!start) start = timestamp;
+            const elapsed = timestamp - start;
+            const progress = Math.min(elapsed / duration, 1); // Normalize to 0-1
+            const easeProgress = easeInOutCubic(progress);
+
+            window.scrollTo(0, startPosition + distance * easeProgress);
+
+            if (elapsed < duration) {
+                requestAnimationFrame(animationStep);
+            }
+            }
+
+            requestAnimationFrame(animationStep);
+        }
+        const images = document.querySelectorAll("#slideshow img");
+        let currentImageIndex = 0;
+
+        function changeImage() {
+            // Set all images to opacity 0
+            images.forEach((img, index) => {
+            img.style.opacity = index === currentImageIndex ? 1 : 0;
+            });
+
+            // Move to the next image
+            currentImageIndex = (currentImageIndex + 1) % images.length;
+        }
+        // Start the slideshow
+        setInterval(changeImage, 400); 
+        
+        
+        // <!-----SLIDESHOW-->
+        let initialize = 0;
+        document.addEventListener("DOMContentLoaded", function () {
+        const images = [
+            "/assets/images/stage3_wide.jpeg",
+            "/assets/images/stage2_long2.jpeg",
+            "/assets/images/waph_hugel_main.jpg",
+            
+        ];
+
+        let currentIndex = 0;
+        const parallaxImage = document.getElementById("parallaxImage");
+        const fadeOverlay = document.getElementById("fadeOverlay");
+
+        // Set the first image immediately
+        parallaxImage.style.backgroundImage = `url(${images[0]})`;
+
+        // Preload all images
+        images.forEach((src) => {
+            const img = new Image();
+            img.src = src;
+        });
+
+        function changeBackground() {
+            const nextIndex = (currentIndex + 1) % images.length;
+            const nextImage = images[nextIndex];
+
+            // Fade to black
+            fadeOverlay.style.opacity = "1";
+
+            // Preload next image before switching
+            setTimeout(() => {
+                parallaxImage.style.backgroundImage = `url(${nextImage})`;
+                fadeOverlay.style.opacity = "0";
+                currentIndex = nextIndex;
+            }, 400); // Wait for black fade before switching
+        }
+
+
+        setInterval(changeBackground, 2500); // Change every 5 seconds
+    });
+    </script>
+</body>
+<footer class=" bg-[#eeece6f6] py-6 ">
+    <div class="max-w-site mx-auto px-4 max-w-[1024px]">
+        <div class="flex justify-between items-center">
+            <!-- Social Media Links -->
+            <div class="space-x-6">
+                <a href="https://www.instagram.com" target="_blank" class="text-gray-600 hover:text-gray-600 ml-6">Instagram</a>
+                <a href="https://www.facebook.com" target="_blank" class="text-gray-600 hover:text-gray-600">Facebook</a>
+                <a href="/impressum" class="text-gray-600 hover:text-gray-600">Impressum</a>
+                <a href="/datenschutz" class="text-gray-600 hover:text-gray-600">Datenschutz</a>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="text-zinc-500 text-xs" >
+                <span>&copy; 2025 Wiener Akademische Philharmonie<br>
+                Designed by Oliver Hendy: oliverjhendy@gmail.com </span>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>

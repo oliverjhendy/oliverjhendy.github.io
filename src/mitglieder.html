@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiener Akademische Philharmonie - Konzerte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto-slab': ['"Roboto Slab"', 'serif']
+                    },
+                    colors: {
+                       
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .sticky-year {
+            position: sticky;
+            top: 8rem; /* Adjust to place it just below the navbar */
+            z-index: 10; /* Ensure it stays above other content */
+            background-color: #faf8f3; /* Optional, to match the navbar background */
+            padding-bottom: .9rem;
+        }
+        .modal {
+            display: none;
+            opacity: 0;
+            pointer-events: none; /* Prevent interactions when hidden */
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .modal.show {
+            display: flex;
+            opacity: 1;
+            pointer-events: auto; /* Allow interactions when visible */
+        }
+        .concert-image {
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        .concert-image:hover {
+            transform: scale(1.02);
+        }
+    
+
+    </style>
+</head>
+<body class="flex flex-col bg-[#faf8f3] min-h-screen font-roboto-slab">
+    <!-- Modal -->
+    <div id="imageModal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4" onclick="closeModal()">
+        <img id="modalImage" class="max-h-[90vh] max-w-[90vw] object-contain" src="" alt="Enlarged image" onclick="closeModal()">
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-[#faf8f3] px-4 py-6 mt-4 sticky top-0 z-50">
+        <div class="mx-auto flex items-end justify-between">
+            <a href="/src/index.html">
+                <img src="/assets/images/waph-logo.png" alt="WAPH Logo" class="h-20 mr-4 px-[1.5em] transition-transform duration-200 ease-in-out hover:scale-105">
+            </a>
+            <div class="hidden md:flex space-x-3">
+                <a href="/src/konzerte.html" class="text-black hover:text-[#800000] mr-0 text-lg px-3 py-2">Konzerte</a>
+                <a href="/src/uber_uns.html" class="text-black hover:text-[#800000] text-lg px-3 py-2">Über Uns</a>
+                <a href="/src/mitglieder.html" class="text-black hover:text-[#800000] text-lg px-3 py-2">Mitglieder</a>
+                <a href="/src/kontakt.html" class="text-black hover:text-[#800000] text-lg px-3 py-2">Kontakt</a>
+            </div>
+            <div class="md:hidden">
+                <button id="hamburgerButton" class="hamburger-menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu links (initially hidden) -->
+    <div id="mobileMenu" class="sticky top-[110px] left-0 w-full bg-[#faf8f3] hidden md:hidden space-y-3 py-4 shadow-lg z-40">
+        <a href="/src/konzerte.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Konzerte</a>
+        <a href="/src/uber_uns.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Über Uns</a>
+        <a href="/src/mitglieder.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Mitglieder</a>
+        <a href="/src/kontakt.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Kontakt</a>
+    </div>
+
+    <script>
+        document.getElementById("hamburgerButton").addEventListener("click", function() {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        });
+        function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("hidden"); // Toggles the visibility of the mobile menu
+        }
+    </script>
+
+    <main class="container mx-auto px-4 mt-8 ml-6 flex-1">
+        <div class="sticky top-0 z-1 text-5xl text-[#800000] mb-4 bg-[#faf8f3]">
+            Probenplan 2025</div> <br>
+        <br>    
+            <!-- Orchestra History -->
+            <div class="text-left mb-12 ml-4">
+                        
+            
+            <p class="text-md max-w-4xl">
+            TERMINE<br/>
+            Mo. 03.03.25, 19:00 - 22:00 Uhr, Notenausgabe IMP oder Cafe Stein<br/>
+            Mo. 10.03.25, 19:00 - 22:00 Uhr, Streicher alleine (Satz 1,2,3) IMP<br/>
+            Mo. 17.03.25, 19:00 - 22:00 Uhr, Streicher alleine (Satz 4,5) IMP<br/>
+            Mo. 24.03.25, 19:00 - 22:00 Uhr, Str., Holz, Horn, Tromp. Pos (Satz 1,2,3) IMP<br/>
+            Mo. 31.03.25, 19:00 - 22:00 Uhr, Str., Holz, Horn, Tromp. Pos(Satz 4,5) IMP<br/>
+            Mo. 07.04.25, 19:00 - 22:00 Uhr, Str.. Stimmproben, Bläser mit Michal IMP<br/>
+            <br/>
+            Oster-Pause<br/>
+            <br/>
+            Mo. 28.04.25 19:00 - 22:00 Uhr, Tutti (Satz 1,2,3) +Pk Ohne schlag IMP<br/>
+            Mo. 05.05.25 19:00 - 22:00 Uhr, Tutti (außer 4.5.Klari, (Satz 4,5) + Pk Ohne schlag IMP<br/>
+            Mo. 12.05.25 19:00 - 22:00 Uhr, Str.Stimmproben, Holz+ Blech mit Michal Ort wird bekannt gegeben <br/>
+            <br/>
+            **Probenwochenende**<br/>
+            Sa. 17.05.25 10:00 - 13:00 Uhr, Probe 1 (Satz 1) Tutti +Kontraf.<br/>
+            15:00 - 19:00 Uhr Probe 2 (Satz 2,3) Tutti Probenwochenende<br/>
+            So. 18.05.25 10:00 - 13:00 Uhr Probe 3 (Satz 4,5) Tutti +4.+5. Klari+ 4. Oboe<br/>
+            15:00 - 18:00 Uhr Probe 4 (Durchlauf) Tutti<br/>
+            **Probenwochenende**<br/>
+            <br/>
+            Mo. 19.05.25 19:00 - 22:00 Uhr Chor alleine, 20:30: Fernorchester ohne Schlag+Pk IMP<br/>
+            Mo. 26.05.25 19:00 - 22:00 Uhr Orchester + Chor +Fernorchester +Hfen IMP <br/>
+            Mo. 02.06.25 19:00 - 22:00 Uhr HP Orchester + Chor + Solistinnen IMP<br/>
+
+            Sa. 07.06.24 09:00 - 09:30 Uhr Einsingen Chor Wiener Musikverein<br/>
+            09:30 - 10:00 Uhr Aufstellung Fernorchester Wiener Musikverein<br/>
+            10:00 - 13:00 Uhr Generalprobe Wiener Musikverein<br/>
+            So. 08.06.24 18:00 - 19:00 Uhr Stellprobe Wiener Musikverein<br/>
+            19:30 Uhr Konzert 1 Wiener Musikverein<br/>
+            Mo. 09.06.24 9:30 - 10:30 Stellprobe Wiener Musikverein<br/>
+            11:00 Uhr Konzert 2 Wiener Musikverein<br/>
+        </p>
+    </div>
+        </div>
+    </main> 
+        
+    <footer class=" bg-[#eeece6f6] py-6 ">
+        <div class="max-w-site mx-auto px-4 max-w-[1024px]">
+            <div class="flex justify-between items-center">
+                <!-- Social Media Links -->
+                <div class="space-x-6">
+                    <a href="https://www.instagram.com" target="_blank" class="text-gray-600 hover:text-gray-600 ml-6">Instagram</a>
+                    <a href="https://www.facebook.com" target="_blank" class="text-gray-600 hover:text-gray-600">Facebook</a>
+                    <a href="/impressum" class="text-gray-600 hover:text-gray-600">Impressum</a>
+                    <a href="/datenschutz" class="text-gray-600 hover:text-gray-600">Datenschutz</a>
+                </div>
+                
+                <!-- Copyright -->
+                <div class="text-zinc-500 text-xs" >
+                    <span>&copy; 2025 Wiener Akademische Philharmonie<br>
+                    Designed by Oliver Hendy: oliverjhendy@gmail.com </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

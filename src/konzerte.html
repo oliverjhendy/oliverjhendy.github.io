@@ -1,0 +1,905 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wiener Akademische Philharmonie - Konzerte</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="output.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'roboto-slab': ['"Roboto Slab"', 'serif']
+                    },
+                    colors: {
+                       
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .sticky-year {
+            position: sticky;
+            top: 8rem; /* Adjust to place it just below the navbar */
+            z-index: 10; /* Ensure it stays above other content */
+            background-color: #faf8f3; /* Optional, to match the navbar background */
+            padding-bottom: .9rem;
+        }
+        .modal {
+            display: none;
+            opacity: 0;
+            pointer-events: none; /* Prevent interactions when hidden */
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        .modal.show {
+            display: flex;
+            opacity: 1;
+            pointer-events: auto; /* Allow interactions when visible */
+        }
+        .concert-image {
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+        }
+        .concert-image:hover {
+            transform: scale(1.02);
+        }
+
+    </style>
+</head>
+<body class="bg-[#faf8f3] font-roboto-slab">
+    <!-- Modal -->
+    <div id="imageModal" class="modal fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4" onclick="closeModal()">
+        <img id="modalImage" class="max-h-[90vh] max-w-[90vw] object-contain" src="" alt="Enlarged image" onclick="closeModal()">
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar" class="bg-[#faf8f3] px-4 py-6 mt-4 sticky top-0 z-50">
+        <div class="mx-auto flex items-end justify-between">
+            <a href="/src/index.html">
+                <img src="/assets/images/waph-logo.png" alt="WAPH Logo" class="h-20 mr-4 px-[1.5em] transition-transform duration-200 ease-in-out hover:scale-105">
+            </a>
+            <div class="hidden md:flex space-x-3">
+                <a href="/src/konzerte.html" class="text-black hover:text-[#800000] mr-0 text-lg px-3 py-2">Konzerte</a>
+                <a href="/src/uber_uns.html" class="text-black hover:text-[#800000] text-lg px-3 py-2">Über Uns</a>
+                <a href="/src/mitglieder.html" class="text-black hover:text-[#800000] text-lg px-3 py-2">Mitglieder</a>
+                <a href="/src/kontakt.html" class="text-black hover:text-[#800000] text-lg px-3 py-2">Kontakt</a>
+            </div>
+            <div class="md:hidden">
+                <button id="hamburgerButton" class="hamburger-menu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile menu links (initially hidden) -->
+    <div id="mobileMenu" class="sticky top-[110px] left-0 w-full bg-[#faf8f3] hidden md:hidden space-y-3 py-4 shadow-lg z-40">
+        <a href="/src/konzerte.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Konzerte</a>
+        <a href="/src/uber_uns.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Über Uns</a>
+        <a href="/src/mitglieder.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Mitglieder</a>
+        <a href="/src/kontakt.html" class="text-black hover:text-[#800000] text-center text-lg px-3 py-2 block">Kontakt</a>
+    </div>
+
+    <script>
+        document.getElementById("hamburgerButton").addEventListener("click", function() {
+            document.getElementById("mobileMenu").classList.toggle("hidden");
+        });
+        function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("hidden"); // Toggles the visibility of the mobile menu
+        }
+    </script>
+
+
+    <!-- Main Content -->
+    <div class="container mx-auto px-4 mt-8">
+        <div class="sticky top-0 z-1 text-5xl text-[#800000] mb-4 bg-[#faf8f3]">
+            Unsere Konzerte</div> <br>
+        <br>            
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2024">2024</div>
+        <!-- Concert 1 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/241129_italien.jpg" alt="Musikverein" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2 pb-5">
+                <div class="font-bold mb-2">Konzerthaus / Mozart Saal</div>
+                <div class="mb-4">
+                    29.11.2024 
+                </div>
+                <div class="text-2xl mb-4">
+                    Christof Unterberger - Hommage à Puccini (UA)<br>
+                    Gioachino Rossini - Konzert für Fagott und Orchester<br>
+                    Felix Mendelssohn Bartholdy - Symphonie Nr. 4 A-Dur op.90<br>
+                    <br>
+                </div>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Jon Svinghammar<br>
+                    <strong>Fagott:</strong>Benedikt Dinkhauser<br>
+                    <strong>Sprecher:</strong> Faris Rahoma<br>
+                </div>
+                
+                <iframe width="100%" height="140" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1811751741&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/christof-unterberger" title="Christof Unterberger" target="_blank" style="color: #cccccc; text-decoration: none;">Christof Unterberger</a> · <a href="https://soundcloud.com/christof-unterberger/three-beats" title="ثلاث دقات (Three Beats)" target="_blank" style="color: #cccccc; text-decoration: none;">ثلاث دقات (Three Beats)</a></div>
+            </div>
+        </div>
+        <!-- Concert 2 -->
+        <div class="concert-card mb-8">
+            <div class="flex items-center justify-center w-full col-span-1 ">
+                <img src="/assets/images/plakarte/2024_OBG_KulturBURG.jpg" alt="Musikverein" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2 pb-5">
+                <div class="font-bold mb-2">Oper Burg Gars</div>
+                
+                <div class="mb-4">
+                    31.08.2024 <br>
+                </div>
+                <br>
+                <div class="text-2xl text mb-4">
+                    Ludwig van Beethoven - Symphony no. 9
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Michał Juraszek<br>
+                    <br>
+                    <strong>Sopran:</strong> Regine Hangler<br>
+                    <strong>Alt:</strong> Margaret Plummer<br>
+                    <strong>Tenor:</strong> Nobert Ernst<br>
+                    <strong>Bariton:</strong>Clemens Unterreiner<br>
+                </div>
+                
+            </div>
+        </div>
+        <!-- Concert -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/240616-Rach.png" alt="Musikverein" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    16.06.2024
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Stravinsky | Ravel | Rachmaninoff
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong>Jon Svinghammar<br>
+                    <strong>Pianist:</strong> Maximilian Kromer <br>
+                </div>
+
+                
+            </div>
+        </div>
+        <!-------2023 --------->
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2023">2023</div>
+        <!-- Concert 1 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/231124_Beethoven9.jpg" alt="Beethoven Symphony No. 9" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2 pb-5">
+                <div class="font-bold mb-2">Wiener Konzerthaus - Großer Saal</div>
+                
+                <div class="mb-4">
+                    24.11.2023
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Ludwig van Beethoven - Beethoven Symphony No. 9
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Michal Juraszek<br>
+                    <strong>Ensemble:</strong> ProChoro Wien<br> 
+                    <strong>Solisten:</strong> Krsteska / Kuryatnikova / Pollak / Aigner<br>
+                </div>
+            </div>
+        </div>
+        <!-- Concert 2 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/230709-rising-stars.png" alt="Strauss | Weber | Bruckner" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    09.07.2023
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Rising Stars 
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Peter Joyce<br>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Concert 2 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/230608_Bruckner.jpg" alt="Strauss | Weber | Bruckner" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    08.06.2023
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Strauss | Weber | Bruckner
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Jon Svinghammar<br>
+                    <strong>Klarinette:</strong> Franz-Joseph Labmayr<br>
+                </div>
+            </div>
+        </div>
+        <!--------------2022--------------->
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2022">2022</div>
+        <!-- Concert 1 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/221120_Verdi.jpg" alt="Verdi Requiem" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    20.11.2022
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Guiseppe Verdi - Requiem
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Michal Juraszek<br>
+                    <strong>Ensemble:</strong> ProChoro Wien<br> 
+                </div>
+            </div>
+        </div>
+        <!-- Concert 1 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/220602_beethoven7.png" alt="Verdi Requiem" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Wiener Konzerthaus - Mozart Saal</div>
+                
+                <div class="mb-4">
+                    22.06.2022
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Wolf | Mozart | Beethoven
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Michal Juraszek<br>
+                    <strong>Violine:</strong> Joen Mikkel Simonsen<br>
+                    <strong>Viola:</strong> Veronika Kubešova<br> 
+                </div>
+            </div>
+        </div>
+        <!-------2021 --------->
+         <div class="sticky-year text-3xl text-black font-bold mb-5 z-2023">2021</div>
+         <!-- Concert 2 -->
+         <div class="concert-card">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/211211-Beethven_strauss_Mahler.png" alt="Beethoven | Strauss | Mahler" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    11.12.2021
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Beethoven | Strauss | Mahler
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Michal Juraszek<br>
+                    <strong>Sopran:</strong> Amber Norelai<br>
+                    <strong>Horn:</strong> Michael Stückler<br>
+                </div>
+            </div>
+        </div>
+        <!-- Concert 3 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/210622.png" alt="2021 Sommer-Konzert" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    22.06.2021
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    2021 Sommer-Konzert
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Michal Juraszek<br>
+                    <strong>Violine:</strong> Catherina Lee<br>
+                </div>
+            </div>
+        </div>
+        <!--------------2019--------------->
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2019">2019</div>
+        <!-- Concert 1 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/191213_puccini.jpg" alt="Puccini | Strauss | Brahms" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    13.12.2019
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Puccini | Strauss | Brahms
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Guillermo Calvo<br>
+                    <strong>Sopran:</strong> Caroline Wenborne<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concert 2 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/190505_Beethoven2.jpg" alt="Frühjahrs-Konzert" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    05.05.2019
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Frühjahrs-Konzert
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigentin:</strong> Nazanin Aghakhani<br>
+                    <strong>Violine:</strong> Paul Kropfitsch<br>
+                </div>
+            </div>
+        </div>
+
+        <!--------------2018--------------->
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2018">2018</div>
+        <!-- Concert 3 -->
+        <div class="concert-card">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/181125_Berlioz.jpg" alt="30 Jahre WAPh / Jubiläumskonzert" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    25.11.2018
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Köhring | Rachmaninoff | Berlioz
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Vinzenz Praxmarer<br>
+                    <strong>Klavier:</strong> Ketevan Sepashvili<br>
+                </div>
+            </div>
+        </div>
+        <div class="concert-card">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/180621_malteser.png" alt="Benefizkonzert des Malteserordens" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Konzerthaus - Großer Saal</div>
+                
+                <div class="mb-4">
+                    21.06.2018
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Benefizkonzert des Malteserordens
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Vinzenz Praxmarer<br>
+                    <strong>Sopran: </strong>Cornelia Horak<br>
+                    <strong>Moderation:</strong> Albert Hosp<br>
+                    <strong>Knabensolo: </strong> Manuel Huemer<br><br>
+                    Konzertchor Wien<br><strong>Chorleitung:</strong> Florian Schwarz, Andreas Salzbrunn<br> <br>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--------------2017--------------->
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2017">2017</div>
+        <!-- Concert 1 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/171125_movendo.jpeg" alt="movendo" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    25 & 27 11.2017
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    movendo
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Azis Sadikovic<br>
+                    <strong>Harfe:</strong> Anneleen Lenaerts<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concert 2 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/170601_Dvorak.jpeg" alt="Smetena | Elgar | Dvorak" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    01.06.2017
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Smetena | Elgar | Dvorak
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Guillermo Calvo<br>
+                    <strong>Violoncello:</strong> Clemens Hagen<br>
+                </div>
+            </div>
+        </div>
+
+        <!--------------2016--------------->
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2016">2016</div>
+        <!-- Concert 3 -->
+        <div class="concert-card">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/161125_Kodaly.jpg" alt="Schubert | Beethoven | Wagner | Kodály" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    25.11.2016
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Schubert | Beethoven | Wagner | Kodály
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Vinzenz Praxmarer<br>
+                    <strong>Klavier:</strong> Wieland Nordmeyer<br>
+                </div>
+            </div>
+        </div>
+        <!-- Concert 1 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/160607_Faun.jpg" alt="FAUN" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    07.06.2016
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    FAUN
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Azis Sadikovic<br>
+                    <strong>Klavier:</strong> Maria Radutu<br>
+                </div>
+            </div>
+        </div>
+
+        <!--------------2015--------------->
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2015">2015</div>
+        <!-- Concert 2 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/151125_serenita.jpg" alt="serenità" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    25.11.2015
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    serenità
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigentin:</strong> Marie Jacquot<br>
+                </div>
+            </div>
+        </div>
+        <!-- Concert 3 -->
+        <div class="concert-card">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/150619_schubert_messe.jpg" alt="Motiv" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Alserkirche</div>
+                
+                <div class="mb-4">
+                    19.07.2015
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Schubert Messe
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Azis Sadikovic<br>
+                </div>
+            </div>
+        </div>
+        <!-- Concert 3 -->
+        <div class="concert-card">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/150506_Motiv.jpg" alt="Motiv" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    06.05.2015
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Motiv
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Azis Sadikovic<br>
+                    <strong>Violine:</strong> Kirill Kobantschenko<br>
+                </div>
+            </div>
+        </div>
+        <!--------------2014--------------->
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2014">2014</div>
+        <!-- Concert 1 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/141129_groseKlase.jpg" alt="große Klasse" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    29.11.2014
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    große Klasse
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Raphael Schluesselberg<br>
+                    <strong>Violine:</strong> Sebastian Gürtler<br>
+                    <strong>Violoncello:</strong> Florian Berner<br>
+                    <strong>Klavier:</strong> Christoph Berner<br>
+                </div>
+            </div>
+        </div>
+        <!-- Concert 1 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/140508_mahler2.png" alt="große Klasse" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Wiener Konzerthaus - Großer Saal</div>
+                
+                <div class="mb-4">
+                    08.05.2014
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Gustav Mahler - Symphonie Nr. 2
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Azis Sadikovic<br>
+                    <strong>Mezzosopran:</strong> Atala Schöck<br>
+                    <strong>Sopran:</strong> Romana Amerling<br><br>
+                    Chor Wien Neubau / Kammerton / Chor im Hemd<br>
+                </div>
+            </div>
+        </div>
+
+
+        <!--------------2013--------------->
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2013">2013</div>
+        <!-- Concert 2 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/131208_PERI.jpg" alt="PERI" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    08.12.2013
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    PERI
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Raphael Schluesselberg<br>
+                </div>
+            </div>
+        </div>
+         <!-- Concert 2 -->
+         <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/13_06_09_waphmeetsmozil.jpg" alt="PERI" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Wiener Konzerthaus - Großer Saal</div>
+                
+                <div class="mb-4">
+                    09.06.2013
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    waph meets mnozil
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Azis Sadikovic<br>
+                    <strong>Mnozil Brass</strong> 
+                </div>
+            </div>
+        </div>
+
+        <!--------------2012--------------->
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2012">2012</div>
+        <!-- Concert 3 -->
+        <div class="concert-card">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/121209_eroic.jpg" alt="Ansicht" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    09.12.2012
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Eroic
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Raphael Schluesselberg<br>
+                    <strong>Violoncello:</strong> Orfeo Mandozzi<br>
+                </div>
+            </div>
+        </div>
+        <!-- Concert 3 -->
+        <div class="concert-card">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/120516_Ansicht.jpg" alt="Ansicht" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    16.05.2012
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Ansicht
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Raphael Schluesselberg<br>
+                    <strong>Bariton:</strong> Adrian Eröd<br>
+                    <strong>Oboe:</strong> Andreas Gschmeidler<br>
+                </div>
+            </div>
+        </div>
+        
+        <!--------------2011--------------->
+        <div class="sticky-year text-3xl text-black font-bold mb-5 z-2011">2011</div>
+
+        <!-- Concert 1 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/111218__1.jpeg" alt="Elgar | Nielsen | Mendelssohn" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    18.12.2011
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Elgar | Nielsen | Mendelssohn
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Raphael Schluesselberg<br>
+                    <strong>Flöte:</strong> Karl-Heinz Schütz<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concert 2 -->
+        <div class="concert-card mb-8">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/110630_romatisch.jpg" alt="Romantisch" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    30.06.2011
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Romantisch
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Gerrit Prießnitz<br>
+                    <strong>Klavier:</strong> Yuka Shindo<br>
+                </div>
+            </div>
+        </div>
+
+        <!-- Concert 3 -->
+        <div class="concert-card">
+            <div class="poster-col">
+                <img src="/assets/images/plakarte/110403_messiah_1.jpeg" alt="Messiah" class="concert-image w-full h-auto object-cover" onclick="openModal(this.src)">
+            </div>
+            
+            <div class="body-text col-span-2">
+                <div class="font-bold mb-2">Musikverein - Goldener Saal</div>
+                
+                <div class="mb-4">
+                    03.04.2011
+                </div>
+                <br>
+                <div class="text-2xl italic mb-4">
+                    Messiah
+                </div>
+                <br>
+                <div class="mb-4">
+                    <strong>Dirigent:</strong> Raphael Eröd<br>
+                    <strong>Ensemble:</strong> Coro Belmonte<br>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    
+
+    <script>
+        function openModal(imgSrc) {
+            const modal = document.getElementById('imageModal');
+            const modalImg = document.getElementById('modalImage');
+            modalImg.src = imgSrc;
+            modal.classList.add('show');
+            document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+        }
+
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.classList.remove('show');
+            document.body.style.overflow = ''; // Restore scrolling
+        }
+
+        // Close modal when pressing Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+
+<footer class=" bg-[#eeece6f6] py-6 ">
+    <div class="max-w-site mx-auto px-4 max-w-[1024px]">
+        <div class="flex justify-between items-center">
+            <!-- Social Media Links -->
+            <div class="space-x-6">
+                <a href="https://www.instagram.com" target="_blank" class="text-gray-600 hover:text-gray-600 ml-6">Instagram</a>
+                <a href="https://www.facebook.com" target="_blank" class="text-gray-600 hover:text-gray-600">Facebook</a>
+                <a href="/impressum" class="text-gray-600 hover:text-gray-600">Impressum</a>
+                <a href="/datenschutz" class="text-gray-600 hover:text-gray-600">Datenschutz</a>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="text-zinc-500 text-xs" >
+                <span>&copy; 2025 Wiener Akademische Philharmonie<br>
+                Designed by Oliver Hendy: oliverjhendy@gmail.com </span>
+            </div>
+        </div>
+    </div>
+</footer>
+</html>
+
+</html>
