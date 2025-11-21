@@ -159,13 +159,13 @@
                 <div class="text-2xl font-bold mb-2">Musikverein / Goldener Saal</div>
                 
                 <div class="text-2xl mb-4">
-                    08.12.2025 
+                    08.12.2025 - 19:30
                 </div>
                 <br>
                 <div class="text-2xl text-maroon italic mb-4">
                     <strong>Ektoras Tartanis</strong> - Ilion <br>
                     <strong>Antonín Dvořák</strong> - Cellokonzert h-moll, Opus 104<br>
-                <strong>Moussorgski/Ravel</strong> - Bilder einer Ausstellung<br>
+                <strong>Mussorgsky/Ravel</strong> - Bilder einer Ausstellung<br>
                 </div>
                 <br>
                 <br>
@@ -179,11 +179,33 @@
             <br>
         </div>
     </div>
+
     <!-- Tickets Section -->
-    <div id="container2" class="bg-[#660000] text-white py-6 px-2">
-        <div class="max-w-[1204px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-cent er px-2" >
+    <div id="container2" class="bg-[#660000] text-white py-12 px-4">
+    <div class="max-w-[1204px] mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 items-center px-4">
+
+        <div class="text-center md:text-left">
+            <h2 class="text-4xl mb-4 text-yellow-100">Karten...</h2>
+            <p class="text-lg">können über den Musikverein erworben werden. Wir freuen uns, Sie bei unserem Konzert zu sehen!</p>
+        </div>
+
+        <div class="md:col-span-2 flex justify-center w-full">
+            
+            <a href="https://musikverein.at/konzert/?id=0006ae14" class="w-full max-w-sm bg-[#faf8f3] border-2 border-[#d4af37] p-6 rounded-3xl shadow-lg text-left block transition transform hover:scale-[1.02]">
+                <div class="flex items-center">
+                    
+                    <img src="/assets/images/musikverein-logo.png" alt="Musikverein Logo" class="h-16 mr-4">
+                    <div>
+                        <h3 class="text-xl text-black font-semibold">Montag, 8. Dezember</h3>
+                        <p class="text-lg text-black">19:30</p>
+                        <p class="text-lg text-black mt-2">Goldener Saal</p>
+                    </div>
+                </div>
+            </a>
 
         </div>
+
+    </div>
     </div>
 
     <!-- Orchestra Section -->
@@ -221,6 +243,13 @@
         <img src="/assets/images/waph_hugel_cropped.jpg" alt="Orchestra Performance" class="w-full h-full object-cover">
     </div>
 
+    <!------Karten button----->
+    <a onclick="scrollToSection('container2')"
+    class="fixed right-0 top-6/7 -translate-y-1/2 bg-[#800000] text-yellow-100 px-2 py-6  z-1000
+        hover:translate-x-0.5 hover:shadow-lg transition-transform [writing-mode:vertical-lr] cursor-pointer"
+    >
+    KARTEN
+    </a>
 
     <script>
         // Parallax scrolling effect
