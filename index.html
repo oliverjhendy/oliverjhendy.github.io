@@ -69,6 +69,19 @@
             line-height: 1.5;
         }
 
+        .fade-in {
+            opacity: 0;
+            transform: translateY(28px);
+            transition: opacity 0.7s ease, transform 0.7s ease;
+        }
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .fade-in.delay-1 { transition-delay: 0.12s; }
+        .fade-in.delay-2 { transition-delay: 0.24s; }
+        .fade-in.delay-3 { transition-delay: 0.36s; }
+
 </style>
     </style>
 </head>
@@ -143,85 +156,82 @@
     </script>
 
     <!-- Main Content -->
-    <div class="container mx-auto px-4 mt-8 max-w-[1204px]">
-            <br>
-            <div class="text-5xl text-maroon mb-4">Herzlich Willkommen!</div>
-            
-            <div class="text-base md:text-2xl lg:text-3xl mb-8">
-                Wir freuen uns darauf, Sie bei unserem nächsten Konzert zu sehen.
-            </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-7 gap-[3em]">
+    <div class="container mx-auto px-4 mt-12 max-w-[1204px] min-h-[calc(100vh-130px)]">
+            <div class="text-5xl text-maroon mb-10 fade-in">Herzlich Willkommen!</div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-7 gap-[3em] fade-in">
                 <div class="w-full col-span-3">
                     <img src="/assets/images/Musikverein.jpg" alt="Konzert Herbst 2026" class="w-full h-auto object-cover">
                 </div>
 
-                <div class ="body-text col-span-4">
-                    <div class="text-2xl font-bold mb-2">Musikverein / Goldener Saal</div>
+                <div class="body-text col-span-4 flex flex-col justify-center">
+                    <div class="text-xs tracking-[0.2em] uppercase text-maroon mb-4">Nächstes Konzert</div>
 
-                    <div class="text-2xl mb-4">
-                        22.11.2026 - 19:30
-                    </div>
-                    <br>
-                    <div class="text-2xl text-maroon italic mb-4">
-                        <strong>Charles Ives</strong> - Central Park in the Dark<br>
-                        <strong>Johannes Brahms</strong> - Schicksalslied Op. 54<br>
-                        <strong>Anton Bruckner</strong> - Symphonie Nr. 6 A-Dur<br>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="text-2xl mb-4">
-                        <strong>Dirigent:</strong> Johannes Beranek<br>
-                        <strong>Chor:</strong> Vokal Ensemble Mödling, Cantus Iuvenis<br>
-                        <strong>Chorleitung:</strong> Kerem Sezen
+                    <div class="text-4xl font-bold mb-1">22. November 2026</div>
+                    <div class="text-lg text-gray-500 mb-1">19:30 Uhr</div>
+                    <div class="text-base text-gray-400 mb-6">Musikverein — Goldener Saal</div>
+
+                    <div class="border-t border-gray-200 pt-5 mb-5">
+                        <div class="space-y-2 text-lg italic text-maroon">
+                            <div><span class="not-italic font-semibold text-black">Charles Ives</span> — Central Park in the Dark</div>
+                            <div><span class="not-italic font-semibold text-black">Johannes Brahms</span> — Schicksalslied Op. 54</div>
+                            <div><span class="not-italic font-semibold text-black">Anton Bruckner</span> — Symphonie Nr. 6 A-Dur</div>
+                        </div>
                     </div>
 
+                    <div class="border-t border-gray-200 pt-5 text-lg text-gray-700 space-y-1">
+                        <div><span class="font-semibold text-black">Dirigent</span>&ensp;Johannes Beranek</div>
+                        <div><span class="font-semibold text-black">Chor</span>&ensp;Vokal Ensemble Mödling, Cantus Iuvenis</div>
+                        <div><span class="font-semibold text-black">Chorleitung</span>&ensp;Kerem Sezen</div>
+                    </div>
                 </div>
-                <br>
             </div>
         </div>
 
+    <!-- Mid-page Parallax Banner -->
+    <div class="w-full mt-14 overflow-hidden" style="height: 60vh;">
+        <div id="midParallax" style="width:100%; height:140%; background-image: url('/assets/images/waph_hugel_cropped.jpg'); background-size: cover; background-position: center; will-change: transform;"></div>
+    </div>
+
     <!-- Orchestra Section -->
-    <div class="bg-[#faf8f3] text-black py-12 px-4">
+    <div class="bg-[#faf8f3] text-black py-16 px-4">
         <div class="max-w-[1204px] mx-auto">
 
             <!-- Orchestra History -->
-            <div class="text-left mb-12">
-                <h2 class="text-4xl text-maroon font-bold mb-4">Wer ist Waph?</h2>
-                <p class="text-lg max-w-4xl">Die Wiener Akademische Philharmonie wurde im Jahr 1988 gegründet. Ursprünglich als Studentenorchester gegründet, wirkt die Wiener Akademische Philharmonie heute als semiprofessionelles Orchester im In- und Ausland und musiziert mit zahlreichen namhaften Solisten und unter herausragenden jungen, wie auch renommierten Dirigenten.</p>
+            <div class="mb-12 fade-in">
+                <div class="text-xs tracking-[0.2em] uppercase text-maroon mb-4">Über uns</div>
+                <h2 class="text-4xl font-bold mb-6">Wer ist WAPH?</h2>
+                <p class="text-lg max-w-2xl leading-relaxed text-gray-700">Die Wiener Akademische Philharmonie wurde im Jahr 1988 gegründet. Ursprünglich als Studentenorchester gegründet, wirkt die Wiener Akademische Philharmonie heute als semiprofessionelles Orchester im In- und Ausland und musiziert mit zahlreichen namhaften Solisten und unter herausragenden jungen, wie auch renommierten Dirigenten.</p>
             </div>
 
             <!-- Orchestra Gallery -->
-            <div class="grid justify-center items-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-12">
-                <!-- Image 1 -->
-                <div class="overflow-hidden">
-                    <img src="/assets/images/mozartsall_waph_wave.jpg" alt="Musician 1" class="object-contain ">
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 mb-12">
+                <div class="overflow-hidden aspect-[4/3] fade-in delay-1">
+                    <img src="/assets/images/mozartsall_waph_wave.jpg" alt="WAPH im Konzert" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                 </div>
-                <!-- Image 2 -->
-                <div class="overflow-hidden">
-                    <img src="/assets/images/IMG_0168.JPG" alt="Musician 2" class="object-conatain">
+                <div class="overflow-hidden aspect-[4/3] fade-in delay-2">
+                    <img src="/assets/images/IMG_0168.JPG" alt="WAPH im Konzert" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                 </div>
-                <!-- Image 3 -->
-                <div class="overflow-hidden">
-                    <img src="/assets/images/IMG_1148.jpeg" alt="Musician 3" class="w-full h-full object-contain">
+                <div class="overflow-hidden aspect-[4/3] fade-in delay-3">
+                    <img src="/assets/images/IMG_1148.jpeg" alt="WAPH im Konzert" class="w-full h-full object-cover transition-transform duration-500 hover:scale-105">
                 </div>
             </div>
 
         </div>
-
-       
     </div>
-     <!-- Full-Screen Image -->
-     <div class="relative w-full object-contain">
-        <img src="/assets/images/waph_hugel_cropped.jpg" alt="Orchestra Performance" class="w-full h-full object-cover">
-    </div>
-
     <script>
         // Parallax scrolling effect
         window.addEventListener('scroll', function() {
             const parallax = document.getElementById('parallaxImage');
             const scrollPosition = window.pageYOffset;
             parallax.style.transform = 'translateY(' + (scrollPosition * 0.33) + 'px)';
+
+            const mid = document.getElementById('midParallax');
+            if (mid) {
+                const containerTop = mid.parentElement.getBoundingClientRect().top + window.pageYOffset;
+                const offset = (window.pageYOffset - containerTop) * 0.3;
+                mid.style.transform = `translateY(${offset}px)`;
+            }
         });
         function scrollToSection(destination) {
             const target = document.getElementById(destination);
@@ -307,11 +317,24 @@
             }, 400);
         }
 
-        Promise.all(images.map(preloadImage)).then(() => {
+        preloadImage(images[0]).then(() => {
             parallaxImage.style.backgroundImage = `url(${images[0]})`;
             setInterval(changeBackground, 4500);
+            images.slice(1).forEach(preloadImage);
         });
     });
+
+        // Scroll-triggered fade-in
+        const fadeObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    fadeObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.fade-in').forEach(el => fadeObserver.observe(el));
     </script>
 </body>
 <footer class=" bg-[#eeece6f6] py-6 ">
